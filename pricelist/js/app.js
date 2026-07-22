@@ -194,8 +194,21 @@
     chipsContainer.addEventListener("click", (e) => {
       const link = e.target.closest(".chip-link");
       if (!link) return;
+      e.preventDefault();
       document.querySelectorAll(".chip-link").forEach((l) => l.classList.remove("active"));
       link.classList.add("active");
+
+      const targetId = link.getAttribute("href").substring(1);
+      const targetEl = document.getElementById(targetId);
+      if (targetEl) {
+        const headerOffset = 130;
+        const elementPosition = targetEl.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.scrollY - headerOffset;
+        window.scrollTo({
+             top: offsetPosition,
+             behavior: "smooth"
+        });
+      }
     });
 
     const observer = new IntersectionObserver(
