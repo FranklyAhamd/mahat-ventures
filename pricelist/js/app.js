@@ -204,19 +204,12 @@
           if (entry.isIntersecting) {
             const id = entry.target.id;
             document.querySelectorAll(".chip-link").forEach((l) => {
-              const isActive = l.dataset.id === id;
-              l.classList.toggle("active", isActive);
-              if (isActive && chipsContainer) {
-                chipsContainer.scrollTo({
-                  left: l.offsetLeft - chipsContainer.offsetWidth / 2 + l.offsetWidth / 2,
-                  behavior: "smooth"
-                });
-              }
+              l.classList.toggle("active", l.dataset.id === id);
             });
           }
         });
       },
-      { rootMargin: "-20% 0px -70% 0px", threshold: 0 }
+      { rootMargin: "-10% 0px -60% 0px", threshold: 0 }
     );
 
     document.querySelectorAll(".section-card").forEach((el) => observer.observe(el));
