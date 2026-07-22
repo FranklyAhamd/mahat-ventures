@@ -1,0 +1,1781 @@
+{
+  "brand": "MAHAT MULTI-PURPOSE VENTURE",
+  "edition": "SCHOOL BOOK PRICE LIST 2026/2027",
+  "phones": [
+    "08051550404",
+    "08028480469",
+    "08138529173"
+  ],
+  "categories": [
+    {
+      "id": "outfit-books",
+      "name": "OUTFIT BOOKS",
+      "items": [
+        {
+          "title": "Outfits Scribble Vol 1",
+          "price": "1,400"
+        },
+        {
+          "title": "Outfits Scribble Vol 2",
+          "price": "1,500"
+        },
+        {
+          "title": "Outfits Composition Nur",
+          "price": "1,500"
+        },
+        {
+          "title": "Outfits Composition Basic 1 - 6",
+          "price": "1,500"
+        },
+        {
+          "title": "Outfits Handwriting Vol 1 & 2 & Colouring 2 in 1",
+          "price": "1,500"
+        },
+        {
+          "title": "Outfits Handwriting Vol 1 - 4",
+          "price": "1,200"
+        },
+        {
+          "title": "Outfits Handwriting Basic 1 - 6",
+          "price": "1,200"
+        },
+        {
+          "title": "Outfits Art & Colouring Vol 1 - 4",
+          "price": "1,200"
+        },
+        {
+          "title": "Outfits Art & Colouring Basic 1 - 6",
+          "price": "1,500"
+        },
+        {
+          "title": "Past question",
+          "price": ""
+        }
+      ]
+    },
+    {
+      "id": "outfit-story-books",
+      "name": "OUTFIT STORY BOOKS",
+      "items": [
+        {
+          "title": "The Ungrateful Child, The Naughty Boy, Little Emmy,",
+          "price": "650"
+        },
+        {
+          "title": "The Bitter Truth, The Lion King, The Richman & Poorman,",
+          "price": "600"
+        },
+        {
+          "title": "Mary, Girl in a wood, The Princess, The Wicked King,",
+          "price": "700"
+        },
+        {
+          "title": "Two Friends, Jane and John, Okiri, The Pot of Gold",
+          "price": "600"
+        },
+        {
+          "title": "Bola and the sleeping child, The Kingmakers",
+          "price": "650"
+        },
+        {
+          "title": "Puffy The Wise Dog, The kind man,",
+          "price": "600"
+        },
+        {
+          "title": "Success in Hardwork, The Festival, The Final Result,",
+          "price": "650"
+        },
+        {
+          "title": "The Brave Boy, The Kind Heart, Jake and The Fat Man,",
+          "price": "600"
+        },
+        {
+          "title": "Adaobi, Old Man",
+          "price": "500"
+        },
+        {
+          "title": "The Good deed, Lost Money, Early to Bed,",
+          "price": "550"
+        },
+        {
+          "title": "Sweet Mother, The Correction, The Good David,",
+          "price": "550"
+        },
+        {
+          "title": "Not My fault, The Good News, The Champion,",
+          "price": "600"
+        },
+        {
+          "title": "Jane's Great Lesson, The Last Judgment",
+          "price": "550"
+        },
+        {
+          "title": "Reward of Hardwork, Sparing the Rod, Tom & Jerry",
+          "price": "500"
+        },
+        {
+          "title": "The Boys and The Tall Man, Jim and Jack",
+          "price": "500"
+        },
+        {
+          "title": "Little Mother Goose, The Bad Peers, The Scholarship",
+          "price": "650"
+        },
+        {
+          "title": "The Kind Hero, The Price of Pride, Tolu, Chicken",
+          "price": "800"
+        },
+        {
+          "title": "An unforgettable Mistake, Ajoke, Dog",
+          "price": "800"
+        },
+        {
+          "title": "The Wrong Choice",
+          "price": "1,100"
+        }
+      ]
+    },
+    {
+      "id": "razat-books",
+      "name": "RAZAT BOOKS",
+      "items": [
+        {
+          "title": "Basic Science Primary 1-6 new",
+          "price": "2,200"
+        },
+        {
+          "title": "Science Foundation Vol. 1-3",
+          "price": "1,450"
+        },
+        {
+          "title": "Ade-Ori Okin Basic 1-6",
+          "price": "2,800"
+        },
+        {
+          "title": "Information Tech. Basic 1-6",
+          "price": "2,000"
+        },
+        {
+          "title": "Akobere Yoruba Basic 1 - 6",
+          "price": "2,300"
+        },
+        {
+          "title": "Picture Time Vol. 1-3",
+          "price": "1,900"
+        },
+        {
+          "title": "Small Weekly",
+          "price": "1,000"
+        },
+        {
+          "title": "Distinct Weekly",
+          "price": "1,600"
+        },
+        {
+          "title": "French Basic 1-6 (Old)",
+          "price": "1,500"
+        },
+        {
+          "title": "French Basic 1-6 New",
+          "price": "1,600"
+        },
+        {
+          "title": "Computer Studies Basic 1-6",
+          "price": "1,450"
+        },
+        {
+          "title": "Computer Studies Vol. 1-2",
+          "price": "1,450"
+        },
+        {
+          "title": "Quantitative & Verbal Vol 1-3",
+          "price": "2,600"
+        },
+        {
+          "title": "Quantitative & Verbal Vol 4",
+          "price": "2,700"
+        },
+        {
+          "title": "Quantitative & Verbal Bk 1",
+          "price": "3,400"
+        },
+        {
+          "title": "Quantitative & Verbal Bk 2 - 6",
+          "price": "2,500"
+        },
+        {
+          "title": "Quantitative & Verbal (Excellent) bk 2",
+          "price": "2,700"
+        },
+        {
+          "title": "Quantitative & Verbal (Excellent) 3-6",
+          "price": "3,100"
+        },
+        {
+          "title": "English Language (First Class) Bk 1",
+          "price": "3,300"
+        },
+        {
+          "title": "English Language (First Class) 2-6",
+          "price": "3,600"
+        },
+        {
+          "title": "English Language (Crystal) Bk 1-5",
+          "price": "2,800"
+        },
+        {
+          "title": "English Language (Achievers) JSS1-SS3",
+          "price": "3,200"
+        },
+        {
+          "title": "Effective Vocational Apt. Vol1-3",
+          "price": "1,400"
+        },
+        {
+          "title": "Effective Vocational Apt. (Old) Basic 1-6",
+          "price": "1,700"
+        },
+        {
+          "title": "Effective Vocational Apt. (New) Basic 1-6",
+          "price": "1,900"
+        },
+        {
+          "title": "Agricultural Science Vol 1-3",
+          "price": "1,250"
+        },
+        {
+          "title": "Agricultural Science Basic 1-6",
+          "price": "1,800"
+        },
+        {
+          "title": "Smart Choice Economics",
+          "price": "3,200"
+        },
+        {
+          "title": "The Quest, My Grandpa, Mission",
+          "price": "950"
+        },
+        {
+          "title": "Good Seed, Ajimisinmi, Fruit of Goodness",
+          "price": "900"
+        },
+        {
+          "title": "Wise orphan, Mother Hen, Patient girl",
+          "price": "900"
+        }
+      ]
+    },
+    {
+      "id": "razat-story-books",
+      "name": "RAZAT STORY BOOKS",
+      "items": [
+        {
+          "title": "Yemisi, Just Push, Choosen, Laitan, For my Son, Al-Barika, My father's property,",
+          "price": "1,050"
+        },
+        {
+          "title": "Agu, Lion Hearted, Clever son, My pride, Abomination",
+          "price": "950"
+        },
+        {
+          "title": "Winner, King is dead, Little wise man, Crocodile and Kangaroo",
+          "price": "1,000"
+        },
+        {
+          "title": "Gateman, Just like the moon, Story my father,",
+          "price": "900"
+        },
+        {
+          "title": "Carpenter son, Teacher",
+          "price": "850"
+        },
+        {
+          "title": "Prince of power, Fate of an..",
+          "price": "1,050"
+        },
+        {
+          "title": "Tears of Joy, Goke the dreamer,",
+          "price": "950"
+        },
+        {
+          "title": "Vanity",
+          "price": "1,050"
+        },
+        {
+          "title": "Heartless king, Poor rat, What a shame",
+          "price": "1,200"
+        },
+        {
+          "title": "Help help, Bisi",
+          "price": "750"
+        },
+        {
+          "title": "Aregbe, Kosi",
+          "price": "850"
+        }
+      ]
+    },
+    {
+      "id": "hawas-publisher",
+      "name": "HAWAS PUBLISHER",
+      "items": [
+        {
+          "title": "Composition JSS 1-3",
+          "price": "1,500"
+        },
+        {
+          "title": "Composition from Nur-Basic 6",
+          "price": "1,500"
+        },
+        {
+          "title": "Social Habits for Nursery Stage 1-3",
+          "price": "1,500"
+        },
+        {
+          "title": "National Values Education Basic 1-6",
+          "price": "2,200"
+        },
+        {
+          "title": "National Values Education JSS 1-3",
+          "price": "1,950"
+        },
+        {
+          "title": "Basic Science & Tech JSS 1-3",
+          "price": "4,200"
+        },
+        {
+          "title": "Business Studies JSS 1-3",
+          "price": "1,500"
+        },
+        {
+          "title": "Pre-Vocational Studies JSS 1-3",
+          "price": "2,200"
+        },
+        {
+          "title": "Mathematics JSS 1-3",
+          "price": "2,500"
+        },
+        {
+          "title": "From Grass to Grace, Obi's Tooth, Cunning Girl, Best way",
+          "price": "550"
+        },
+        {
+          "title": "Magic Stick, Bad Act, Jolly kid, Birthday trip, Spared a rod, Sam & Sara",
+          "price": "500"
+        },
+        {
+          "title": "Treasure Hunt, Sade's Birthday, Malam nasir, Obinna, Lesson learnt",
+          "price": "500"
+        },
+        {
+          "title": "Mfon and beehive, Cat and Mouse, Mel and lost Dog, Cow and Fly",
+          "price": "500"
+        },
+        {
+          "title": "Ada & Oba, Colours in the sky, Tim & Jim, My boy box, Bob's rot jam",
+          "price": "500"
+        },
+        {
+          "title": "Jim Shoe, Ego, Old Cobler, Dad's Tea cup, Roy cap",
+          "price": "500"
+        },
+        {
+          "title": "Rex and kid, Safety first, Mum's fruit shop, Germs",
+          "price": "500"
+        },
+        {
+          "title": "Reward of Diligence, Bob and Max, Lazy man, Efe and the bikeman",
+          "price": "500"
+        },
+        {
+          "title": "Ken & Kim, The Best Gift, Akujo the dwarf, Yesterday mistake",
+          "price": "600"
+        },
+        {
+          "title": "Narrow escape, Honesty pays, Ejiro, King's primer Part 1 & 2, Victim",
+          "price": "550"
+        },
+        {
+          "title": "Mother's pride, Ike, Friend of Foe, Super girl, Anana, Wicked step mother",
+          "price": "600"
+        },
+        {
+          "title": "Daniel & Daniella, Journey to no where, Mum's mistake, Right Path",
+          "price": "600"
+        }
+      ]
+    },
+    {
+      "id": "hawas-story-books",
+      "name": "HAWAS STORY BOOKS",
+      "items": [
+        {
+          "title": "Nation hope, Secret of excellent, My Inheritance, Adventure of crown prince",
+          "price": "650"
+        },
+        {
+          "title": "Roadside, Obalola, Father's Reward",
+          "price": "650"
+        },
+        {
+          "title": "Seed of greatness",
+          "price": "750"
+        },
+        {
+          "title": "Tussle",
+          "price": "700"
+        },
+        {
+          "title": "What goes around",
+          "price": "700"
+        },
+        {
+          "title": "Kind Jerry, New home, Alphabet book",
+          "price": "550"
+        },
+        {
+          "title": "Corner Stone, My Heritage, Ifeanyi, Right choice",
+          "price": "600"
+        },
+        {
+          "title": "Visitor, Winner, Punctuality, Antelope, Reward of dishonesty",
+          "price": "600"
+        },
+        {
+          "title": "Aleho, Umaru, The jar, Liz & Jim, Ted, Bee Ant & Fly",
+          "price": "500"
+        },
+        {
+          "title": "Cow & Ox, Toba, Smart boy, Wise girl, Dad new car",
+          "price": "500"
+        },
+        {
+          "title": "Ibukun, My red pen, Ava, New boy, Little tommy",
+          "price": "500"
+        }
+      ]
+    },
+    {
+      "id": "ayengbe-books",
+      "name": "AYENGBE BOOKS",
+      "items": [
+        {
+          "title": "Maths & Eng Stage 1 & 2",
+          "price": "2,500"
+        },
+        {
+          "title": "Maths & Eng Vol 1 & 2",
+          "price": "2,700"
+        },
+        {
+          "title": "English Grammar Foundation Stage 4 - 6",
+          "price": "2,000"
+        },
+        {
+          "title": "English Grammar Foundation Stage 1 - 3",
+          "price": "1,800"
+        },
+        {
+          "title": "Vocational Education for Basic 1 - 2",
+          "price": "2,000"
+        },
+        {
+          "title": "Vocational Education for Basic 3 - 4",
+          "price": "2,200"
+        },
+        {
+          "title": "Vocational Education for Basic 5 - 6",
+          "price": "2,500"
+        },
+        {
+          "title": "English Composition Basic 1-6",
+          "price": "800"
+        },
+        {
+          "title": "Quantitative/Verbal Aptitude Basic 4-6",
+          "price": "2,000"
+        },
+        {
+          "title": "Quantitative/Verbal Aptitude Basic 1-3",
+          "price": "1,900"
+        },
+        {
+          "title": "Quantitative/Verbal Aptitude for Stage1 to Vol-2",
+          "price": "1,900"
+        },
+        {
+          "title": "History Bk 1-6",
+          "price": "1,300"
+        },
+        {
+          "title": "English Reading Comprehension new Bk 1-3",
+          "price": "2,800"
+        },
+        {
+          "title": "English Reading Comprehension new Bk 4-6",
+          "price": "3,000"
+        },
+        {
+          "title": "Mathematics Basic 1 - 6",
+          "price": "2,500"
+        }
+      ]
+    },
+    {
+      "id": "an-above-publisher",
+      "name": "AN ABOVE PUBLISHER",
+      "items": [
+        {
+          "title": "Phonics for Nur - Bk 6",
+          "price": "2,200"
+        }
+      ]
+    },
+    {
+      "id": "bolanle-oladimeji-dosunmu",
+      "name": "BOLANLE OLADIMEJI DOSUNMU",
+      "items": [
+        {
+          "title": "Yoruba for Beginners Basic 1 - 6",
+          "price": "1,500"
+        },
+        {
+          "title": "Yoruba dun-un ka Basic 1 - 6",
+          "price": "1,500"
+        },
+        {
+          "title": "Mo on ko mo on ka (Iwe kin in ni ati iwe keji)",
+          "price": "1,500"
+        }
+      ]
+    },
+    {
+      "id": "temark-books",
+      "name": "TEMARK BOOKS",
+      "items": [
+        {
+          "title": "Math & Eng For Beginner's Guide to Stg1-4",
+          "price": "3,000"
+        },
+        {
+          "title": "Intensive Mathematics Bk 1 - 6",
+          "price": "3,000"
+        },
+        {
+          "title": "Intensive English Bk 1 - 6",
+          "price": "3,000"
+        },
+        {
+          "title": "Intensive English JS 1 - 3",
+          "price": "3,000"
+        },
+        {
+          "title": "Intensive Mathematics JS 1 - 3",
+          "price": "3,000"
+        },
+        {
+          "title": "Quantitative & Verbal Stg 1 - bk 6",
+          "price": "3,000"
+        },
+        {
+          "title": "English Grammar Nur - Bk 3",
+          "price": "3,000"
+        },
+        {
+          "title": "English Grammar Bk 4 - 6",
+          "price": "3,000"
+        },
+        {
+          "title": "English Grammar JSS 1 - 3",
+          "price": "3,000"
+        },
+        {
+          "title": "Basic Foundation for Beginners ABC",
+          "price": "700"
+        },
+        {
+          "title": "Basic Foundation for Beginner 123",
+          "price": "700"
+        },
+        {
+          "title": "Math & Eng Lower/Upper For Beginner",
+          "price": "3,500"
+        },
+        {
+          "title": "Comprehensive Weekly Ass. Stage 1 - Bk6",
+          "price": "700"
+        },
+        {
+          "title": "Comprehensive Weekly Ass. Stage 1 - Bk 6 Big",
+          "price": "1,100"
+        },
+        {
+          "title": "Comprehensive Weekly Ass. JSS1-SSS3",
+          "price": "1,200"
+        },
+        {
+          "title": "Art Stage 1 - Basic 6",
+          "price": "2,000"
+        },
+        {
+          "title": "Writing Stage 1 - Basic 6",
+          "price": "2,000"
+        },
+        {
+          "title": "Revision",
+          "price": ""
+        }
+      ]
+    },
+    {
+      "id": "habnaj-books",
+      "name": "HABNAJ BOOKS",
+      "items": [
+        {
+          "title": "Rudiment Maths Basic 1 - 6",
+          "price": "2,900"
+        },
+        {
+          "title": "My first book Alp & Number (3in1) Vol-1",
+          "price": "2,800"
+        },
+        {
+          "title": "Busy hands (2in1) Vol 1-4",
+          "price": "3,100"
+        },
+        {
+          "title": "Puzzle Bk 1 - 6",
+          "price": "1,500"
+        },
+        {
+          "title": "My first Book of Scribbling Vol 1&2",
+          "price": "2,000"
+        },
+        {
+          "title": "Top-most Maths JSS1-3",
+          "price": "3,000"
+        },
+        {
+          "title": "CRS Vol1 & 2",
+          "price": "2,000"
+        },
+        {
+          "title": "CRS BK 1 - 6 / IRK 2-6",
+          "price": "2,000"
+        },
+        {
+          "title": "IRS BK 1",
+          "price": "2,300"
+        },
+        {
+          "title": "Top-most Maths SS1",
+          "price": "3,300"
+        },
+        {
+          "title": "Top-most Maths SS2",
+          "price": "3,000"
+        },
+        {
+          "title": "Top-most Maths SS3",
+          "price": "3,300"
+        }
+      ]
+    },
+    {
+      "id": "eclipse-publisher",
+      "name": "ECLIPSE PUBLISHER",
+      "items": [
+        {
+          "title": "Verbal & Quantitative Bk 1 - 6",
+          "price": "2,000"
+        }
+      ]
+    },
+    {
+      "id": "shoyeson-books",
+      "name": "SHOYESON BOOKS",
+      "items": [
+        {
+          "title": "New Trends in Handwriting & Colouring Vol 1 - Bk 6",
+          "price": "2,000"
+        },
+        {
+          "title": "New Trends in Religion & National Value Nur-Bk6",
+          "price": "2,500"
+        },
+        {
+          "title": "New Trends in Religion & National Value JSS1-SS3",
+          "price": "3,000"
+        },
+        {
+          "title": "New Trend Pre Sch. Letter / Number Work 1 & 2",
+          "price": "2,500"
+        },
+        {
+          "title": "New Trend Beginner upper, lower / Math 3 in 1",
+          "price": "4,000"
+        },
+        {
+          "title": "New Trend Beginner upper, lower / Math 2 in 1",
+          "price": "3,000"
+        },
+        {
+          "title": "New Trends in Eng/Maths Vol.1 - 4",
+          "price": "3,000"
+        },
+        {
+          "title": "New Trends in Verbal & Quantitative Kg 1 - Basic 6",
+          "price": "3,000"
+        },
+        {
+          "title": "New Trends in English Composition Nur-Basic 6",
+          "price": "2,000"
+        },
+        {
+          "title": "Practical Guide Composition JSS1-SSS3",
+          "price": "2,500"
+        },
+        {
+          "title": "New Trends in Social Studies Nursery Class-Basic 6",
+          "price": "1,500"
+        },
+        {
+          "title": "Comprehensive Weekly Assessment Kg1-Basic 6",
+          "price": "700"
+        },
+        {
+          "title": "Comprehensive Weekly Big Kg1-Basic 6",
+          "price": "1,200"
+        },
+        {
+          "title": "Comprehensive Weekly Big JSS 1- SSS 3",
+          "price": "1,350"
+        },
+        {
+          "title": "Solid Foundation for Beginners ABC & 123",
+          "price": "1,600"
+        },
+        {
+          "title": "Yoruba",
+          "price": "2,500"
+        },
+        {
+          "title": "New Trends in English Bk 1 - 6",
+          "price": "3,000"
+        },
+        {
+          "title": "New Trends in Mathematics Bk 1-6",
+          "price": "3,000"
+        },
+        {
+          "title": "New Trends in Math JSS 1-SSS3",
+          "price": "3,000"
+        },
+        {
+          "title": "New Trends in English JSS 1-SSS3",
+          "price": "3,000"
+        },
+        {
+          "title": "Revision Questions on Common Entrance Exam Basic 5-6",
+          "price": ""
+        }
+      ]
+    },
+    {
+      "id": "mee-dah-publishers",
+      "name": "MEE-DAH PUBLISHERS",
+      "items": [
+        {
+          "title": "Basic Science & Tech Basic 1-3 old",
+          "price": "2,200"
+        },
+        {
+          "title": "Basic Science & Tech Basic 4-6 old",
+          "price": "2,500"
+        },
+        {
+          "title": "Basic Science & Tech Vol 1-3 new",
+          "price": "2,500"
+        },
+        {
+          "title": "Basic Science & Tech Basic 1-6 new",
+          "price": "3,500"
+        },
+        {
+          "title": "Physics SS1",
+          "price": "1,500"
+        },
+        {
+          "title": "Physics SS2 - SS3",
+          "price": "2,000"
+        },
+        {
+          "title": "Pat day out, Tim & his toy, Rescue, Tom's good habit",
+          "price": "500"
+        },
+        {
+          "title": "Shining virtue, Enchanted quest, Reward of jealousy,",
+          "price": "550"
+        },
+        {
+          "title": "Reward of jelousy",
+          "price": "600"
+        }
+      ]
+    },
+    {
+      "id": "global-success",
+      "name": "GLOBAL SUCCESS",
+      "items": [
+        {
+          "title": "Mathematics/English JSS 1 - 3",
+          "price": "3,750"
+        }
+      ]
+    },
+    {
+      "id": "excellent-books",
+      "name": "EXCELLENT BOOKS",
+      "items": [
+        {
+          "title": "Math & Eng Vol 1,2,3&4 (Old)",
+          "price": "2,600"
+        },
+        {
+          "title": "Math & Eng 3 in 1 Vol 1& Vol 2 (Old)",
+          "price": "3,600"
+        },
+        {
+          "title": "Math & Eng New Vol 2,3,4",
+          "price": "3,000"
+        },
+        {
+          "title": "Math & Eng 3 in 1 Vol 1 New",
+          "price": "3,900"
+        },
+        {
+          "title": "Math & Eng 2 in 1 Vol 1 New",
+          "price": "2,800"
+        },
+        {
+          "title": "Writing for Vol 1 to Bk 6",
+          "price": "1,200"
+        },
+        {
+          "title": "Colouring Book Vol 1 to Vol 4",
+          "price": "1,200"
+        },
+        {
+          "title": "Computer for Nursery 2 (Old)",
+          "price": "1,200"
+        },
+        {
+          "title": "Computer for Basic 1 - 6 (Old)",
+          "price": "1,300"
+        },
+        {
+          "title": "Computer for Basic 1 - 6 (New)",
+          "price": "1,800"
+        },
+        {
+          "title": "Quantitative & Verbal Basic 1-6",
+          "price": "2,200"
+        },
+        {
+          "title": "Mathematics Workbook Basic 1-6",
+          "price": "1,200"
+        },
+        {
+          "title": "Mathematics textbook Basic 1-6",
+          "price": "2,200"
+        }
+      ]
+    },
+    {
+      "id": "az-publishers",
+      "name": "AZ PUBLISHERS",
+      "items": [
+        {
+          "title": "Creative Art & Colouring Beginners - Level 6",
+          "price": "1,200"
+        },
+        {
+          "title": "Puzzle KG - Bk 5",
+          "price": "1,000"
+        },
+        {
+          "title": "New Step in Mathematics Basic 1 - 3",
+          "price": "2,800"
+        },
+        {
+          "title": "New Step in Mathematics Basic 4 - 6",
+          "price": "2,800"
+        },
+        {
+          "title": "New Step in English Basic 1 - 3",
+          "price": "2,800"
+        },
+        {
+          "title": "New Step in English Basic 4 - 6",
+          "price": "2,800"
+        },
+        {
+          "title": "New Step in Maths/English Vol 1-4",
+          "price": "3,000"
+        },
+        {
+          "title": "New Step in Mathematics JSS1 - 3",
+          "price": "3,000"
+        },
+        {
+          "title": "New Step in English Study JSS1 - 3",
+          "price": "3,000"
+        },
+        {
+          "title": "Grammar & Phonics Stage 1- 2",
+          "price": "1,500"
+        },
+        {
+          "title": "Grammar & Phonics 1- 3",
+          "price": "1,700"
+        },
+        {
+          "title": "Grammar & Phonics 4 - 6",
+          "price": "1,800"
+        },
+        {
+          "title": "New Step in Verbal & Quantitative Vol1-4",
+          "price": "2,700"
+        },
+        {
+          "title": "New Step in Verbal & Quantitative Bk 1-3",
+          "price": "3,000"
+        },
+        {
+          "title": "New Step in Verbal & Quantitative Bk 4-6",
+          "price": "3,200"
+        },
+        {
+          "title": "Writing Vol 1- Basic 6",
+          "price": "1,200"
+        },
+        {
+          "title": "Maths / Eng. SS 1- 3",
+          "price": "3,200"
+        },
+        {
+          "title": "Revision",
+          "price": ""
+        }
+      ]
+    },
+    {
+      "id": "lithosite-books",
+      "name": "LITHOSITE BOOKS",
+      "items": [
+        {
+          "title": "Foundation Mathematics BK 1-3",
+          "price": "3,100"
+        },
+        {
+          "title": "Foundation Mathematics BK 4-5",
+          "price": "3,200"
+        },
+        {
+          "title": "Foundation Mathematics BK 6",
+          "price": "3,700"
+        },
+        {
+          "title": "Essential English BK 1-3",
+          "price": "3,100"
+        },
+        {
+          "title": "Essential English BK 4-5",
+          "price": "3,200"
+        },
+        {
+          "title": "Essential English BK 6",
+          "price": "3,700"
+        },
+        {
+          "title": "Introduction to Maths/English (KG)",
+          "price": "3,200"
+        },
+        {
+          "title": "Universal Maths/English Vol 1-2",
+          "price": "3,800"
+        },
+        {
+          "title": "Universal Maths/English Vol 3",
+          "price": "4,000"
+        },
+        {
+          "title": "Fundamental Grammar Nur - Bk 3",
+          "price": "2,000"
+        },
+        {
+          "title": "Fundamental Grammar Bk 4 - 6",
+          "price": "2,200"
+        },
+        {
+          "title": "Essential Maths Bk 1- 3",
+          "price": "3,750"
+        },
+        {
+          "title": "Essential Maths Bk 4- 6",
+          "price": "4,050"
+        },
+        {
+          "title": "Introduction Colouring For Nursery Bk 1, 2 & 3",
+          "price": "1,800"
+        },
+        {
+          "title": "Standard Verbal & Quantitative Vol 1-4",
+          "price": "2,600"
+        },
+        {
+          "title": "Standard Verbal & Quantitative Bk 1-Bk6",
+          "price": "2,850"
+        },
+        {
+          "title": "Brilliant Vocational Attitude Nursery",
+          "price": "1,700"
+        },
+        {
+          "title": "Brilliant Vocational Attitude book 1 - 6",
+          "price": "1,900"
+        },
+        {
+          "title": "Effective Science & Technology book 1-4",
+          "price": "2,600"
+        },
+        {
+          "title": "Effective Science & Technology book 5-6",
+          "price": "2,800"
+        },
+        {
+          "title": "Basic Computer & Technology Nursery",
+          "price": "1,200"
+        },
+        {
+          "title": "Basic Computer & Technology Book 1-6",
+          "price": "1,800"
+        },
+        {
+          "title": "Extensive National Value Bk 1-6",
+          "price": "2,300"
+        },
+        {
+          "title": "Extensive National Value Jss 1-3",
+          "price": "3,400"
+        },
+        {
+          "title": "Writing and Composition Nursery - Bk 3",
+          "price": "1,600"
+        },
+        {
+          "title": "Writing and Composition Bk 4-6",
+          "price": "1,700"
+        },
+        {
+          "title": "Pre-vocational Basic 4 - Jss 3",
+          "price": "3,450"
+        },
+        {
+          "title": "B.S.T Combine Basic 1- 4",
+          "price": "3,450"
+        },
+        {
+          "title": "B.S.T Combine Basic 5 - 6",
+          "price": "4,650"
+        },
+        {
+          "title": "B.S.T Combine J S 1- 3",
+          "price": "5,250"
+        },
+        {
+          "title": "History Basic 1 - 6",
+          "price": "2,500"
+        },
+        {
+          "title": "History Jss 1 - 3",
+          "price": "2,700"
+        },
+        {
+          "title": "Mathematics/English Jss 1 - 3",
+          "price": "4,150"
+        }
+      ]
+    },
+    {
+      "id": "ohms-books",
+      "name": "OHMS BOOKS",
+      "items": [
+        {
+          "title": "Handwriting Kg-Bk 6",
+          "price": "1,200"
+        },
+        {
+          "title": "Art Stage 1-6",
+          "price": "1,200"
+        },
+        {
+          "title": "Old Cultural Arts Basic 1-6",
+          "price": "1,600"
+        },
+        {
+          "title": "New Cultural Arts Basic 1-6",
+          "price": "2,700"
+        },
+        {
+          "title": "Writing & Creative Art Kg - Basic 6",
+          "price": "1,400"
+        },
+        {
+          "title": "Home Economics Nur - Bk6 (Gold)",
+          "price": "1,600"
+        },
+        {
+          "title": "Home Economics Nur - Bk6 (Silver)",
+          "price": "1,600"
+        },
+        {
+          "title": "Prevocational Bk 1- 6",
+          "price": "2,500"
+        },
+        {
+          "title": "P.H.E Basic 1-6",
+          "price": "1,600"
+        },
+        {
+          "title": "Civic Education Basic 1-6",
+          "price": "1,600"
+        },
+        {
+          "title": "Shapes and Colour for Nur",
+          "price": "1,100"
+        },
+        {
+          "title": "Civic & Security Education Basic 1-6",
+          "price": "1,600"
+        },
+        {
+          "title": "Moral Education Basic 1-6",
+          "price": "1,600"
+        },
+        {
+          "title": "Spellings Pry 1-6",
+          "price": "1,500"
+        },
+        {
+          "title": "Grammar Nur - Basic 6",
+          "price": "2,500"
+        },
+        {
+          "title": "Health habits Nur1-3 (Silver)",
+          "price": "1,400"
+        },
+        {
+          "title": "Health habits Nur1-3 (Gold)",
+          "price": "1,700"
+        },
+        {
+          "title": "Moral Habits Nur1-3",
+          "price": "1,600"
+        },
+        {
+          "title": "Cultural & Art JSS 1-3",
+          "price": "3,000"
+        },
+        {
+          "title": "Economics JSS 1-3",
+          "price": "2,000"
+        },
+        {
+          "title": "History Basic 1-6",
+          "price": "1,600"
+        },
+        {
+          "title": "History JSS 1-3",
+          "price": "2,000"
+        },
+        {
+          "title": "History SSS 1-3",
+          "price": "2,200"
+        }
+      ]
+    },
+    {
+      "id": "ohms-story-books",
+      "name": "OHMS STORY BOOKS",
+      "items": [
+        {
+          "title": "Day camp, Fun at hut, Don & Fen, Moonlight, Fun with pet",
+          "price": "500"
+        },
+        {
+          "title": "Ungrateful hawk, Mike toy box, Joy & Joe, The sky",
+          "price": "500"
+        },
+        {
+          "title": "Ani, Little Anne, The Trial, The Lion & the wise lamb,",
+          "price": "500"
+        },
+        {
+          "title": "My dream, Sade and Chike, Agu & Mad cow, Bola & old man, Mum's old tales",
+          "price": "500"
+        },
+        {
+          "title": "All is fun, Mum's new baby, The fox, Greedy Billy, Dino & Kino",
+          "price": "500"
+        },
+        {
+          "title": "Pin box, Sam and rat, Two Young ones, Happy home",
+          "price": "500"
+        },
+        {
+          "title": "Don and Joe, Seyi, Chi's mug, Greedy monkey, Ben and Ody",
+          "price": "500"
+        },
+        {
+          "title": "Grandpa and the kids, Mysteries bird, Fully doll, Sarah",
+          "price": "500"
+        },
+        {
+          "title": "Lost pot, White dove, Sun-Moon & Star, Auntie Joke",
+          "price": "500"
+        },
+        {
+          "title": "New Beginning, Ajike, Omolara",
+          "price": "1,300"
+        },
+        {
+          "title": "Sequacious child, The Tongue, Beggar dream, Better late",
+          "price": "800"
+        },
+        {
+          "title": "Tortoise and the fisherman, Nightmare, New dawn, Future is not for sale",
+          "price": "800"
+        },
+        {
+          "title": "Oduma, Tough time, Competition",
+          "price": "1,200"
+        },
+        {
+          "title": "Grammarian, I am different,",
+          "price": "1,200"
+        }
+      ]
+    },
+    {
+      "id": "eph-publisher",
+      "name": "EPH PUBLISHER",
+      "items": [
+        {
+          "title": "Learning English for Pry 1 - 6",
+          "price": "2,900"
+        },
+        {
+          "title": "Learning Maths for Pry 1 - 6",
+          "price": "2,900"
+        },
+        {
+          "title": "Learning Eng/Maths Pre-Prim 1-4",
+          "price": "2,900"
+        },
+        {
+          "title": "Learning Verbal & Quantitative for Pry 1 - 6",
+          "price": "2,600"
+        },
+        {
+          "title": "Genius Eng/Maths for Pre-Prim 1-2",
+          "price": "2,900"
+        },
+        {
+          "title": "Genius Eng/Maths for Pre-Prim 3-4",
+          "price": "3,000"
+        },
+        {
+          "title": "EPH Verbal & Quantitative Kg -Basic 5",
+          "price": "2,300"
+        },
+        {
+          "title": "EPH Verbal & Quantitative Basic 6",
+          "price": "2,100"
+        },
+        {
+          "title": "Writing Pre-Primary -Basic 6",
+          "price": "1,300"
+        },
+        {
+          "title": "Fine & Creative Art Crech - Stage 4",
+          "price": "1,250"
+        }
+      ]
+    },
+    {
+      "id": "emperor-publisher",
+      "name": "EMPEROR PUBLISHER",
+      "items": [
+        {
+          "title": "Brainpower English Basic 1 - 3",
+          "price": "3,500"
+        },
+        {
+          "title": "Brainpower English Basic 4 - 6",
+          "price": "3,600"
+        },
+        {
+          "title": "Brainpower Maths Basic 1 - 3",
+          "price": "3,500"
+        },
+        {
+          "title": "Brainpower Maths Basic 4 - 6",
+          "price": "3,600"
+        },
+        {
+          "title": "Brainpower Verbal & Quantitative Basic 1 - 6",
+          "price": "4,500"
+        }
+      ]
+    },
+    {
+      "id": "solution-publisher",
+      "name": "SOLUTION PUBLISHER",
+      "items": [
+        {
+          "title": "Perfect Kid Writing Beginner - Basic 6",
+          "price": "1,500"
+        }
+      ]
+    },
+    {
+      "id": "godfirst-story-books",
+      "name": "GODFIRST STORY BOOKS",
+      "items": [
+        {
+          "title": "Tummy Trouble",
+          "price": "550"
+        },
+        {
+          "title": "Ape & Hat, The jam, The bay, Obi's Doe, Slypal, Ox & Fox",
+          "price": "500"
+        },
+        {
+          "title": "The vet, Mum's new mug, Dad old car, Chi's new pet, My Pet & I, Bola & Chika, Bob & Meg",
+          "price": "500"
+        },
+        {
+          "title": "Lazy bird, New car, Tina's kite, Old den, Joy's day, Lesson for all",
+          "price": "500"
+        },
+        {
+          "title": "Mia's kits, Bear & bee, Jim Hot pan, Ade's ear, The spy",
+          "price": "500"
+        },
+        {
+          "title": "Obedient child, new leaf, Two friends, Who cap fit, naked truth, Little Buzor",
+          "price": "500"
+        },
+        {
+          "title": "Dad's lost key, so many lies, Nike",
+          "price": "500"
+        },
+        {
+          "title": "Peace maker, Danger, Role model, Good idea, Help from kids, Obedient boy,",
+          "price": "500"
+        },
+        {
+          "title": "Ken's families, Lesson that pays, Nathan, Incredible friend, Lost but found",
+          "price": "500"
+        },
+        {
+          "title": "Stingy boy, Biola's tail, Bundle of joy, Good defect evil, To be the best, Ola & the ant",
+          "price": "500"
+        },
+        {
+          "title": "Uzo & his dad, Ted & Kim, Roy's kid, James & Tom, Chicks everywhere, Boat trip, Mum saved the day",
+          "price": "500"
+        },
+        {
+          "title": "Hidden truth, Seed of success, Enitan, A great lesson",
+          "price": "600"
+        },
+        {
+          "title": "Magic box, From slum to glory, Kind uncle, great reward, Trip by train, Catch them young, Ipade awon alagbara",
+          "price": "600"
+        },
+        {
+          "title": "Wise saver, Future tears, Angelic mother, change your ways, match box, Daniel",
+          "price": "600"
+        },
+        {
+          "title": "Gold mine, spare the rod, rejected stone, gift the lucky child, sweet memories, twist of fate",
+          "price": "700"
+        },
+        {
+          "title": "Guilty one, Cornerstone, Change of heart, Nemesis, Back to square one, Thief of time, Treasure in reading",
+          "price": "700"
+        },
+        {
+          "title": "Grass to grace, unknown secret, the clown, wasted years, problem shared, pot of fortune, a dream come true",
+          "price": "700"
+        },
+        {
+          "title": "Fulfilled destiny, core circle, What goes around, Doctor folahan, Story time, Village Scenerio",
+          "price": "700"
+        },
+        {
+          "title": "Future leader, eye opener, Agonies of endurance, Tit for tat, Ayorunbo, Gbogbo lomo",
+          "price": "700"
+        },
+        {
+          "title": "Patriotic child, Dare to succeed",
+          "price": "700"
+        },
+        {
+          "title": "Had I know, Journey of life, Two wings of a bird, Against all odd",
+          "price": "800"
+        },
+        {
+          "title": "Prize of misbehaviour, spare the rod",
+          "price": "850"
+        },
+        {
+          "title": "Freedom to excel",
+          "price": "1,100"
+        }
+      ]
+    },
+    {
+      "id": "godfirst-books",
+      "name": "GODFIRST BOOKS",
+      "items": [
+        {
+          "title": "Brillant Scholar Verbal & Quantitative Bk 1-6",
+          "price": "2,700"
+        },
+        {
+          "title": "Right Approach Verbal & Quantitative Vol 1 to Basic 6",
+          "price": "2,500"
+        },
+        {
+          "title": "Right Approach Maths Basic 1-6",
+          "price": "2,500"
+        },
+        {
+          "title": "Right Approach English Basic 1-3",
+          "price": "3,500"
+        },
+        {
+          "title": "Right Approach English Basic 4-6",
+          "price": "3,200"
+        },
+        {
+          "title": "Right Approach Mathematics & English Vol. 1 - 4",
+          "price": "2,500"
+        },
+        {
+          "title": "Iwe Ede Yoruba (Omo Elede) Alakoobeere-basic 6",
+          "price": "1,200"
+        },
+        {
+          "title": "Brillant Scholar Intermediate Science with work book ss1-3",
+          "price": "2,500"
+        },
+        {
+          "title": "Scribblings",
+          "price": "1,500"
+        }
+      ]
+    },
+    {
+      "id": "akpan-aniefiok",
+      "name": "AKPAN ANIEFIOK",
+      "items": [
+        {
+          "title": "Comprehensive Vocational Vol 1 & 2",
+          "price": "1,700"
+        },
+        {
+          "title": "Comprehensive Vocational Bk 1 - 6",
+          "price": "2,000"
+        },
+        {
+          "title": "Eko Past Question & Answer (Lagos)",
+          "price": ""
+        },
+        {
+          "title": "Best Choice Past Question & Answer (Ogun)",
+          "price": ""
+        }
+      ]
+    },
+    {
+      "id": "global-kids-books",
+      "name": "GLOBAL KIDS BOOKS",
+      "items": [
+        {
+          "title": "Computer for Nur 1 & 2",
+          "price": "1,200"
+        },
+        {
+          "title": "Computer for Basic 1 - 6",
+          "price": "1,400"
+        },
+        {
+          "title": "Composition for Nursery 2-basic 6",
+          "price": "1,200"
+        },
+        {
+          "title": "Writing Vol 1 - Bk 6",
+          "price": "1,200"
+        },
+        {
+          "title": "Handwriting & Colouring Vol 1 - Bk 6",
+          "price": "1,450"
+        }
+      ]
+    },
+    {
+      "id": "unique-publishers",
+      "name": "UNIQUE PUBLISHERS",
+      "items": [
+        {
+          "title": "Verbal & Quantitative Beginners-Nur3",
+          "price": "2,500"
+        },
+        {
+          "title": "Verbal & Quantitative Basic 1-6",
+          "price": "1,800"
+        }
+      ]
+    },
+    {
+      "id": "super-publishers",
+      "name": "SUPER PUBLISHERS",
+      "items": [
+        {
+          "title": "Perfect Palms Verbal & Quantitative Vol 1 - Bk 6",
+          "price": "2,700"
+        },
+        {
+          "title": "Perfect Palms Math & English Vol 2 - Vol 4",
+          "price": "3,000"
+        },
+        {
+          "title": "Perfect Palms Math & English Beginners 3 in 1",
+          "price": "4,500"
+        },
+        {
+          "title": "Perfect Palms Creative Art & Colouring Vol 1 - 4",
+          "price": "1,300"
+        },
+        {
+          "title": "Perfect Palms scribble Pre-school",
+          "price": "1,800"
+        }
+      ]
+    },
+    {
+      "id": "matthew-a-olagunju",
+      "name": "MATTHEW A. OLAGUNJU",
+      "items": [
+        {
+          "title": "Approach Phonics Kg & Nur",
+          "price": "2,000"
+        },
+        {
+          "title": "Approach Phonics Basic 1 - 6",
+          "price": "1,800"
+        }
+      ]
+    },
+    {
+      "id": "smart-thinker",
+      "name": "SMART THINKER",
+      "items": [
+        {
+          "title": "Verbal & Quantitative Vol 1 - 4",
+          "price": "2,000"
+        }
+      ]
+    },
+    {
+      "id": "effective",
+      "name": "EFFECTIVE",
+      "items": [
+        {
+          "title": "Weekly Vol 1 & Vol 2",
+          "price": "700"
+        },
+        {
+          "title": "Weekly Vol 3 - Bk 6",
+          "price": "1,000"
+        }
+      ]
+    },
+    {
+      "id": "tranaz",
+      "name": "TRANAZ",
+      "items": [
+        {
+          "title": "Weekly Vol 1 - Bk 6",
+          "price": "800"
+        },
+        {
+          "title": "Weekly JSS 1 - SSS 3",
+          "price": "1,200"
+        }
+      ]
+    },
+    {
+      "id": "figtext-publisher",
+      "name": "FIGTEXT PUBLISHER",
+      "items": [
+        {
+          "title": "Maths & Eng. Beginners Vol 1&2",
+          "price": ""
+        },
+        {
+          "title": "Colouring Vol 1&2",
+          "price": ""
+        }
+      ]
+    },
+    {
+      "id": "sawab-book",
+      "name": "SAWAB BOOK",
+      "items": [
+        {
+          "title": "Scribble Vol 1 & 2",
+          "price": "1,200"
+        },
+        {
+          "title": "The bell, One good turn, Two naught boys, Tomori",
+          "price": "550"
+        },
+        {
+          "title": "Adigun, Laide, Zero to Hero, Two old woman & Greedy servant",
+          "price": "550"
+        },
+        {
+          "title": "Mukaila, Wasted talent, Bitter exprience, A stranger & kids",
+          "price": "600"
+        },
+        {
+          "title": "Naomi",
+          "price": "500"
+        }
+      ]
+    },
+    {
+      "id": "ucf-books-group-story-books",
+      "name": "UCF BOOKS GROUP (STORY BOOKS)",
+      "items": [
+        {
+          "title": "Mysteries of animal Kingdom, Who will rule our land, 72 hours",
+          "price": "1,050"
+        },
+        {
+          "title": "Ade goes to Osogbo, Torty and the Bee",
+          "price": "850"
+        },
+        {
+          "title": "Chioma, True Beauty, Why Tortories, Bone of Contention",
+          "price": "700"
+        },
+        {
+          "title": "Pinky and the greedy mouse, As they made their beds, Everyone loves charlie",
+          "price": "650"
+        },
+        {
+          "title": "Moonlight Stories, The Mysterious thief, Roys pet, Too late, Magic words, Mofe",
+          "price": "650"
+        },
+        {
+          "title": "Lost money, Ani's clay hut, Ada & the down town doll, HAP & the Earth, Two good pals",
+          "price": "650"
+        },
+        {
+          "title": "Peppy, Old woman's daughter, Trial, Abeni, Oh what have I done, Tani, Honest apprentice",
+          "price": "800"
+        },
+        {
+          "title": "Focus girls, Serves you right, Star boy, A man character, Creed of success, Gifted hand, New boy",
+          "price": "750"
+        },
+        {
+          "title": "Ahmed & the angry boy, Ike & the lost boy, A heart that care",
+          "price": "600"
+        },
+        {
+          "title": "Bob & Maigc bird, The taxi driver, Obi & the little garden, Aweni",
+          "price": "850"
+        },
+        {
+          "title": "Adventure of Eze, Little Berbie, Saved by his talent",
+          "price": "780"
+        },
+        {
+          "title": "A child of circumstance, Lost family, Game changer, Undercover agent, Turning tide",
+          "price": "1,200"
+        },
+        {
+          "title": "The inheritance",
+          "price": "1,400"
+        },
+        {
+          "title": "Cindy's Birthday Party/Finding Cindy (2 books in 1)",
+          "price": "1,200"
+        },
+        {
+          "title": "Exceptional Art & Colouring Pre-primary Vol 1 - 4",
+          "price": "1,100"
+        },
+        {
+          "title": "Exceptional Handwriting Pre-primary Vol 1 - 4",
+          "price": "1,200"
+        },
+        {
+          "title": "Creative Mind English Composition Bk 1 - 6",
+          "price": "1,500"
+        }
+      ]
+    },
+    {
+      "id": "wonderful-focus-publishers",
+      "name": "WONDERFUL FOCUS PUBLISHERS",
+      "items": [
+        {
+          "title": "Maths Bk1 - 6",
+          "price": "2,800"
+        },
+        {
+          "title": "English Bk1 - 6",
+          "price": "2,800"
+        },
+        {
+          "title": "Computer Nur - Basic 6",
+          "price": "1,500"
+        },
+        {
+          "title": "Vocational Basic 1 - 6",
+          "price": "1,500"
+        },
+        {
+          "title": "Grammar Basic 1 - 6",
+          "price": "1,500"
+        },
+        {
+          "title": "Maths / Eng 3 in 1 Stage 1",
+          "price": "4,500"
+        },
+        {
+          "title": "Maths / Eng 2 in 1 Stage 1 - 4",
+          "price": "3,000"
+        }
+      ]
+    }
+  ]
+}

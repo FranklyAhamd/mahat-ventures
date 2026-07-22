@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="MAHAT Multi-Purpose Venture — School book price list 2026/2027. Quality textbooks, story books and stationery." />
+  <title>School Book Price List | MAHAT Multi-Purpose Venture</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/mahat_logo.png" type="image/png" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar__inner">
+      <span class="top-bar__note">All prices in Nigerian Naira (&#8358;)</span>
+      <div class="top-bar__phones" id="top-phones"></div>
+    </div>
+  </div>
+
+  <!-- Hero Header -->
+  <header class="hero">
+    <div class="container hero__inner">
+      <div class="hero__brand-box">
+        <img src="assets/mahat_logo.png" alt="MAHAT logo" class="hero__logo" />
+        <div>
+          <p class="hero__eyebrow">Official Price List</p>
+          <h1 class="hero__title" id="brand-name">MAHAT MULTI-PURPOSE VENTURE</h1>
+          <p class="hero__edition" id="edition">SCHOOL BOOK PRICE LIST 2026/2027</p>
+        </div>
+      </div>
+
+      <div class="hero__actions">
+        <a href="#catalog" class="btn btn--primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 6h16M4 12h16M4 18h7"/></svg>
+          Browse Catalog
+        </a>
+        <a href="#" class="btn btn--whatsapp" id="whatsapp-btn" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          WhatsApp Order
+        </a>
+      </div>
+
+      <div class="hero__contact-pills" id="hero-contact-pills"></div>
+    </div>
+  </header>
+
+  <!-- Sticky Search Bar & Horizontal Publisher Scroll Chips -->
+  <div class="sticky-wrapper">
+    <div class="toolbar">
+      <div class="container toolbar__inner">
+        <div class="search">
+          <svg class="search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3-3"/></svg>
+          <input type="search" id="search" class="search__input" placeholder="Search title or publisher..." autocomplete="off" />
+          <button type="button" class="search__clear" id="search-clear" aria-label="Clear search">&times;</button>
+        </div>
+        <p class="toolbar__count"><span id="item-count">0</span> books</p>
+      </div>
+    </div>
+
+    <!-- Scrollable Publisher Chips -->
+    <div class="publisher-chips" id="publisher-chips"></div>
+  </div>
+
+  <!-- Catalog Section -->
+  <main class="container layout" id="catalog">
+    <div class="catalog__intro">
+      <h2>Book Catalog</h2>
+      <p>Tap any publisher tab above to quickly navigate or search for titles below.</p>
+    </div>
+
+    <div id="catalog-sections"></div>
+
+    <div class="empty-state" id="empty-state" hidden>
+      <p>No books found matching your search.</p>
+      <button type="button" class="btn btn--ghost" id="reset-search">Clear Search</button>
+    </div>
+  </main>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <div class="container contact__grid">
+      <div class="contact__copy">
+        <h2>Need Assistance?</h2>
+        <p>Contact us directly via call or WhatsApp for bulk orders & school supply quotes.</p>
+      </div>
+      <div class="contact__cards" id="contact-cards"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; <span id="year"></span> <span id="footer-brand"></span></p>
+      <p class="footer__edition" id="footer-edition"></p>
+    </div>
+  </footer>
+
+  <!-- Floating Quick WhatsApp Button -->
+  <a href="#" class="floating-whatsapp" id="floating-whatsapp" target="_blank" rel="noopener" aria-label="Order on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+    <span>Order</span>
+  </a>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
+

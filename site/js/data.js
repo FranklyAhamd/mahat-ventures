@@ -1,0 +1,1785 @@
+window.PRICE_LIST = {
+  "brand": "MAHAT MULTI-PURPOSE VENTURE",
+  "phones": [
+    "08051550404",
+    "08028480469",
+    "08138529173"
+  ],
+  "edition": "SCHOOL BOOK PRICE LIST 2026/2027",
+  "pages": [
+    [
+      [
+        {
+          "header": "OUTFIT BOOKS",
+          "rows": [
+            [
+              "Outfits Scribble Vol 1",
+              "1,400"
+            ],
+            [
+              "Outfits Scribble Vol 2",
+              "1,500"
+            ],
+            [
+              "Outfits Composition Nur",
+              "1,500"
+            ],
+            [
+              "Outfits Composition Basic 1 - 6",
+              "1,500"
+            ],
+            [
+              "Outfits Handwriting Vol 1 & 2 & Colouring 2 in 1",
+              "1,500"
+            ],
+            [
+              "Outfits Handwriting Vol 1 - 4",
+              "1,200"
+            ],
+            [
+              "Outfits Handwriting Basic 1 - 6",
+              "1,200"
+            ],
+            [
+              "Outfits Art & Colouring Vol 1 - 4",
+              "1,200"
+            ],
+            [
+              "Outfits Art & Colouring Basic 1 - 6",
+              "1,500"
+            ],
+            [
+              "Past question",
+              ""
+            ]
+          ]
+        },
+        {
+          "header": "OUTFIT STORY BOOKS",
+          "rows": [
+            [
+              "The Ungrateful Child, The Naughty Boy, Little Emmy,",
+              "650"
+            ],
+            [
+              "The Bitter Truth, The Lion King, The Richman & Poorman,",
+              "600"
+            ],
+            [
+              "Mary, Girl in a wood, The Princess, The Wicked King,",
+              "700"
+            ],
+            [
+              "Two Friends, Jane and John, Okiri, The Pot of Gold",
+              "600"
+            ],
+            [
+              "Bola and the sleeping child, The Kingmakers",
+              "650"
+            ],
+            [
+              "Puffy The Wise Dog, The kind man,",
+              "600"
+            ],
+            [
+              "Success in Hardwork, The Festival, The Final Result,",
+              "650"
+            ],
+            [
+              "The Brave Boy, The Kind Heart, Jake and The Fat Man,",
+              "600"
+            ],
+            [
+              "Adaobi, Old Man",
+              "500"
+            ],
+            [
+              "The Good deed, Lost Money, Early to Bed,",
+              "550"
+            ],
+            [
+              "Sweet Mother, The Correction, The Good David,",
+              "550"
+            ],
+            [
+              "Not My fault, The Good News, The Champion,",
+              "600"
+            ],
+            [
+              "Jane's Great Lesson, The Last Judgment",
+              "550"
+            ],
+            [
+              "Reward of Hardwork, Sparing the Rod, Tom & Jerry",
+              "500"
+            ],
+            [
+              "The Boys and The Tall Man, Jim and Jack",
+              "500"
+            ],
+            [
+              "Little Mother Goose, The Bad Peers, The Scholarship",
+              "650"
+            ],
+            [
+              "The Kind Hero, The Price of Pride, Tolu, Chicken",
+              "800"
+            ],
+            [
+              "An unforgettable Mistake, Ajoke, Dog",
+              "800"
+            ],
+            [
+              "The Wrong Choice",
+              "1,100"
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "header": "RAZAT BOOKS",
+          "rows": [
+            [
+              "Basic Science Primary 1-6 new",
+              "2,200"
+            ],
+            [
+              "Science Foundation Vol. 1-3",
+              "1,450"
+            ],
+            [
+              "Ade-Ori Okin Basic 1-6",
+              "2,800"
+            ],
+            [
+              "Information Tech. Basic 1-6",
+              "2,000"
+            ],
+            [
+              "Akobere Yoruba Basic 1 - 6",
+              "2,300"
+            ],
+            [
+              "Picture Time Vol. 1-3",
+              "1,900"
+            ],
+            [
+              "Small Weekly",
+              "1,000"
+            ],
+            [
+              "Distinct Weekly",
+              "1,600"
+            ],
+            [
+              "French Basic 1-6 (Old)",
+              "1,500"
+            ],
+            [
+              "French Basic 1-6 New",
+              "1,600"
+            ],
+            [
+              "Computer Studies Basic 1-6",
+              "1,450"
+            ],
+            [
+              "Computer Studies Vol. 1-2",
+              "1,450"
+            ],
+            [
+              "Quantitative & Verbal Vol 1-3",
+              "2,600"
+            ],
+            [
+              "Quantitative & Verbal Vol 4",
+              "2,700"
+            ],
+            [
+              "Quantitative & Verbal Bk 1",
+              "3,400"
+            ],
+            [
+              "Quantitative & Verbal Bk 2 - 6",
+              "2,500"
+            ],
+            [
+              "Quantitative & Verbal (Excellent) bk 2",
+              "2,700"
+            ],
+            [
+              "Quantitative & Verbal (Excellent) 3-6",
+              "3,100"
+            ],
+            [
+              "English Language (First Class) Bk 1",
+              "3,300"
+            ],
+            [
+              "English Language (First Class) 2-6",
+              "3,600"
+            ],
+            [
+              "English Language (Crystal) Bk 1-5",
+              "2,800"
+            ],
+            [
+              "English Language (Achievers) JSS1-SS3",
+              "3,200"
+            ],
+            [
+              "Effective Vocational Apt. Vol1-3",
+              "1,400"
+            ],
+            [
+              "Effective Vocational Apt. (Old) Basic 1-6",
+              "1,700"
+            ],
+            [
+              "Effective Vocational Apt. (New) Basic 1-6",
+              "1,900"
+            ],
+            [
+              "Agricultural Science Vol 1-3",
+              "1,250"
+            ],
+            [
+              "Agricultural Science Basic 1-6",
+              "1,800"
+            ],
+            [
+              "Smart Choice Economics",
+              "3,200"
+            ],
+            [
+              "The Quest, My Grandpa, Mission",
+              "950"
+            ],
+            [
+              "Good Seed, Ajimisinmi, Fruit of Goodness",
+              "900"
+            ],
+            [
+              "Wise orphan, Mother Hen, Patient girl",
+              "900"
+            ]
+          ]
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "header": "RAZAT STORY BOOKS",
+          "rows": [
+            [
+              "Yemisi, Just Push, Choosen, Laitan, For my Son, Al-Barika, My father's property,",
+              "1,050"
+            ],
+            [
+              "Agu, Lion Hearted, Clever son, My pride, Abomination",
+              "950"
+            ],
+            [
+              "Winner, King is dead, Little wise man, Crocodile and Kangaroo",
+              "1,000"
+            ],
+            [
+              "Gateman, Just like the moon, Story my father,",
+              "900"
+            ],
+            [
+              "Carpenter son, Teacher",
+              "850"
+            ],
+            [
+              "Prince of power, Fate of an..",
+              "1,050"
+            ],
+            [
+              "Tears of Joy, Goke the dreamer,",
+              "950"
+            ],
+            [
+              "Vanity",
+              "1,050"
+            ],
+            [
+              "Heartless king, Poor rat, What a shame",
+              "1,200"
+            ],
+            [
+              "Help help, Bisi",
+              "750"
+            ],
+            [
+              "Aregbe, Kosi",
+              "850"
+            ]
+          ]
+        },
+        {
+          "header": "HAWAS PUBLISHER",
+          "rows": [
+            [
+              "Composition JSS 1-3",
+              "1,500"
+            ],
+            [
+              "Composition from Nur-Basic 6",
+              "1,500"
+            ],
+            [
+              "Social Habits for Nursery Stage 1-3",
+              "1,500"
+            ],
+            [
+              "National Values Education Basic 1-6",
+              "2,200"
+            ],
+            [
+              "National Values Education JSS 1-3",
+              "1,950"
+            ],
+            [
+              "Basic Science & Tech JSS 1-3",
+              "4,200"
+            ],
+            [
+              "Business Studies JSS 1-3",
+              "1,500"
+            ],
+            [
+              "Pre-Vocational Studies JSS 1-3",
+              "2,200"
+            ],
+            [
+              "Mathematics JSS 1-3",
+              "2,500"
+            ],
+            [
+              "From Grass to Grace, Obi's Tooth, Cunning Girl, Best way",
+              "550"
+            ],
+            [
+              "Magic Stick, Bad Act, Jolly kid, Birthday trip, Spared a rod, Sam & Sara",
+              "500"
+            ],
+            [
+              "Treasure Hunt, Sade's Birthday, Malam nasir, Obinna, Lesson learnt",
+              "500"
+            ],
+            [
+              "Mfon and beehive, Cat and Mouse, Mel and lost Dog, Cow and Fly",
+              "500"
+            ],
+            [
+              "Ada & Oba, Colours in the sky, Tim & Jim, My boy box, Bob's rot jam",
+              "500"
+            ],
+            [
+              "Jim Shoe, Ego, Old Cobler, Dad's Tea cup, Roy cap",
+              "500"
+            ],
+            [
+              "Rex and kid, Safety first, Mum's fruit shop, Germs",
+              "500"
+            ],
+            [
+              "Reward of Diligence, Bob and Max, Lazy man, Efe and the bikeman",
+              "500"
+            ],
+            [
+              "Ken & Kim, The Best Gift, Akujo the dwarf, Yesterday mistake",
+              "600"
+            ],
+            [
+              "Narrow escape, Honesty pays, Ejiro, King's primer Part 1 & 2, Victim",
+              "550"
+            ],
+            [
+              "Mother's pride, Ike, Friend of Foe, Super girl, Anana, Wicked step mother",
+              "600"
+            ],
+            [
+              "Daniel & Daniella, Journey to no where, Mum's mistake, Right Path",
+              "600"
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "header": "HAWAS STORY BOOKS",
+          "rows": [
+            [
+              "Nation hope, Secret of excellent, My Inheritance, Adventure of crown prince",
+              "650"
+            ],
+            [
+              "Roadside, Obalola, Father's Reward",
+              "650"
+            ],
+            [
+              "Seed of greatness",
+              "750"
+            ],
+            [
+              "Tussle",
+              "700"
+            ],
+            [
+              "What goes around",
+              "700"
+            ],
+            [
+              "Kind Jerry, New home, Alphabet book",
+              "550"
+            ],
+            [
+              "Corner Stone, My Heritage, Ifeanyi, Right choice",
+              "600"
+            ],
+            [
+              "Visitor, Winner, Punctuality, Antelope, Reward of dishonesty",
+              "600"
+            ],
+            [
+              "Aleho, Umaru, The jar, Liz & Jim, Ted, Bee Ant & Fly",
+              "500"
+            ],
+            [
+              "Cow & Ox, Toba, Smart boy, Wise girl, Dad new car",
+              "500"
+            ],
+            [
+              "Ibukun, My red pen, Ava, New boy, Little tommy",
+              "500"
+            ]
+          ]
+        },
+        {
+          "header": "AYENGBE BOOKS",
+          "rows": [
+            [
+              "Maths & Eng Stage 1 & 2",
+              "2,500"
+            ],
+            [
+              "Maths & Eng Vol 1 & 2",
+              "2,700"
+            ],
+            [
+              "English Grammar Foundation Stage 4 - 6",
+              "2,000"
+            ],
+            [
+              "English Grammar Foundation Stage 1 - 3",
+              "1,800"
+            ],
+            [
+              "Vocational Education for Basic 1 - 2",
+              "2,000"
+            ],
+            [
+              "Vocational Education for Basic 3 - 4",
+              "2,200"
+            ],
+            [
+              "Vocational Education for Basic 5 - 6",
+              "2,500"
+            ],
+            [
+              "English Composition Basic 1-6",
+              "800"
+            ],
+            [
+              "Quantitative/Verbal Aptitude Basic 4-6",
+              "2,000"
+            ],
+            [
+              "Quantitative/Verbal Aptitude Basic 1-3",
+              "1,900"
+            ],
+            [
+              "Quantitative/Verbal Aptitude for Stage1 to Vol-2",
+              "1,900"
+            ],
+            [
+              "History Bk 1-6",
+              "1,300"
+            ],
+            [
+              "English Reading Comprehension new Bk 1-3",
+              "2,800"
+            ],
+            [
+              "English Reading Comprehension new Bk 4-6",
+              "3,000"
+            ],
+            [
+              "Mathematics Basic 1 - 6",
+              "2,500"
+            ]
+          ]
+        },
+        {
+          "header": "AN ABOVE PUBLISHER",
+          "rows": [
+            [
+              "Phonics for Nur - Bk 6",
+              "2,200"
+            ]
+          ]
+        },
+        {
+          "header": "BOLANLE OLADIMEJI DOSUNMU",
+          "rows": [
+            [
+              "Yoruba for Beginners Basic 1 - 6",
+              "1,500"
+            ],
+            [
+              "Yoruba dun-un ka Basic 1 - 6",
+              "1,500"
+            ],
+            [
+              "Mo on ko mo on ka (Iwe kin in ni ati iwe keji)",
+              "1,500"
+            ]
+          ]
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "header": "TEMARK BOOKS",
+          "rows": [
+            [
+              "Math & Eng For Beginner's Guide to Stg1-4",
+              "3,000"
+            ],
+            [
+              "Intensive Mathematics Bk 1 - 6",
+              "3,000"
+            ],
+            [
+              "Intensive English Bk 1 - 6",
+              "3,000"
+            ],
+            [
+              "Intensive English JS 1 - 3",
+              "3,000"
+            ],
+            [
+              "Intensive Mathematics JS 1 - 3",
+              "3,000"
+            ],
+            [
+              "Quantitative & Verbal Stg 1 - bk 6",
+              "3,000"
+            ],
+            [
+              "English Grammar Nur - Bk 3",
+              "3,000"
+            ],
+            [
+              "English Grammar Bk 4 - 6",
+              "3,000"
+            ],
+            [
+              "English Grammar JSS 1 - 3",
+              "3,000"
+            ],
+            [
+              "Basic Foundation for Beginners ABC",
+              "700"
+            ],
+            [
+              "Basic Foundation for Beginner 123",
+              "700"
+            ],
+            [
+              "Math & Eng Lower/Upper For Beginner",
+              "3,500"
+            ],
+            [
+              "Comprehensive Weekly Ass. Stage 1 - Bk6",
+              "700"
+            ],
+            [
+              "Comprehensive Weekly Ass. Stage 1 - Bk 6 Big",
+              "1,100"
+            ],
+            [
+              "Comprehensive Weekly Ass. JSS1-SSS3",
+              "1,200"
+            ],
+            [
+              "Art Stage 1 - Basic 6",
+              "2,000"
+            ],
+            [
+              "Writing Stage 1 - Basic 6",
+              "2,000"
+            ],
+            [
+              "Revision",
+              ""
+            ]
+          ]
+        },
+        {
+          "header": "HABNAJ BOOKS",
+          "rows": [
+            [
+              "Rudiment Maths Basic 1 - 6",
+              "2,900"
+            ],
+            [
+              "My first book Alp & Number (3in1) Vol-1",
+              "2,800"
+            ],
+            [
+              "Busy hands (2in1) Vol 1-4",
+              "3,100"
+            ],
+            [
+              "Puzzle Bk 1 - 6",
+              "1,500"
+            ],
+            [
+              "My first Book of Scribbling Vol 1&2",
+              "2,000"
+            ],
+            [
+              "Top-most Maths JSS1-3",
+              "3,000"
+            ],
+            [
+              "CRS Vol1 & 2",
+              "2,000"
+            ],
+            [
+              "CRS BK 1 - 6 / IRK 2-6",
+              "2,000"
+            ],
+            [
+              "IRS BK 1",
+              "2,300"
+            ],
+            [
+              "Top-most Maths SS1",
+              "3,300"
+            ],
+            [
+              "Top-most Maths SS2",
+              "3,000"
+            ],
+            [
+              "Top-most Maths SS3",
+              "3,300"
+            ]
+          ]
+        },
+        {
+          "header": "ECLIPSE PUBLISHER",
+          "rows": [
+            [
+              "Verbal & Quantitative Bk 1 - 6",
+              "2,000"
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "header": "SHOYESON BOOKS",
+          "rows": [
+            [
+              "New Trends in Handwriting & Colouring Vol 1 - Bk 6",
+              "2,000"
+            ],
+            [
+              "New Trends in Religion & National Value Nur-Bk6",
+              "2,500"
+            ],
+            [
+              "New Trends in Religion & National Value JSS1-SS3",
+              "3,000"
+            ],
+            [
+              "New Trend Pre Sch. Letter / Number Work 1 & 2",
+              "2,500"
+            ],
+            [
+              "New Trend Beginner upper, lower / Math 3 in 1",
+              "4,000"
+            ],
+            [
+              "New Trend Beginner upper, lower / Math 2 in 1",
+              "3,000"
+            ],
+            [
+              "New Trends in Eng/Maths Vol.1 - 4",
+              "3,000"
+            ],
+            [
+              "New Trends in Verbal & Quantitative Kg 1 - Basic 6",
+              "3,000"
+            ],
+            [
+              "New Trends in English Composition Nur-Basic 6",
+              "2,000"
+            ],
+            [
+              "Practical Guide Composition JSS1-SSS3",
+              "2,500"
+            ],
+            [
+              "New Trends in Social Studies Nursery Class-Basic 6",
+              "1,500"
+            ],
+            [
+              "Comprehensive Weekly Assessment Kg1-Basic 6",
+              "700"
+            ],
+            [
+              "Comprehensive Weekly Big Kg1-Basic 6",
+              "1,200"
+            ],
+            [
+              "Comprehensive Weekly Big JSS 1- SSS 3",
+              "1,350"
+            ],
+            [
+              "Solid Foundation for Beginners ABC & 123",
+              "1,600"
+            ],
+            [
+              "Yoruba",
+              "2,500"
+            ],
+            [
+              "New Trends in English Bk 1 - 6",
+              "3,000"
+            ],
+            [
+              "New Trends in Mathematics Bk 1-6",
+              "3,000"
+            ],
+            [
+              "New Trends in Math JSS 1-SSS3",
+              "3,000"
+            ],
+            [
+              "New Trends in English JSS 1-SSS3",
+              "3,000"
+            ],
+            [
+              "Revision Questions on Common Entrance Exam Basic 5-6",
+              ""
+            ]
+          ]
+        },
+        {
+          "header": "MEE-DAH PUBLISHERS",
+          "rows": [
+            [
+              "Basic Science & Tech Basic 1-3 old",
+              "2,200"
+            ],
+            [
+              "Basic Science & Tech Basic 4-6 old",
+              "2,500"
+            ],
+            [
+              "Basic Science & Tech Vol 1-3 new",
+              "2,500"
+            ],
+            [
+              "Basic Science & Tech Basic 1-6 new",
+              "3,500"
+            ],
+            [
+              "Physics SS1",
+              "1,500"
+            ],
+            [
+              "Physics SS2 - SS3",
+              "2,000"
+            ],
+            [
+              "Pat day out, Tim & his toy, Rescue, Tom's good habit",
+              "500"
+            ],
+            [
+              "Shining virtue, Enchanted quest, Reward of jealousy,",
+              "550"
+            ],
+            [
+              "Reward of jelousy",
+              "600"
+            ]
+          ]
+        },
+        {
+          "header": "GLOBAL SUCCESS",
+          "rows": [
+            [
+              "Mathematics/English JSS 1 - 3",
+              "3,750"
+            ]
+          ]
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "header": "EXCELLENT BOOKS",
+          "rows": [
+            [
+              "Math & Eng Vol 1,2,3&4 (Old)",
+              "2,600"
+            ],
+            [
+              "Math & Eng 3 in 1 Vol 1& Vol 2 (Old)",
+              "3,600"
+            ],
+            [
+              "Math & Eng New Vol 2,3,4",
+              "3,000"
+            ],
+            [
+              "Math & Eng 3 in 1 Vol 1 New",
+              "3,900"
+            ],
+            [
+              "Math & Eng 2 in 1 Vol 1 New",
+              "2,800"
+            ],
+            [
+              "Writing for Vol 1 to Bk 6",
+              "1,200"
+            ],
+            [
+              "Colouring Book Vol 1 to Vol 4",
+              "1,200"
+            ],
+            [
+              "Computer for Nursery 2 (Old)",
+              "1,200"
+            ],
+            [
+              "Computer for Basic 1 - 6 (Old)",
+              "1,300"
+            ],
+            [
+              "Computer for Basic 1 - 6 (New)",
+              "1,800"
+            ],
+            [
+              "Quantitative & Verbal Basic 1-6",
+              "2,200"
+            ],
+            [
+              "Mathematics Workbook Basic 1-6",
+              "1,200"
+            ],
+            [
+              "Mathematics textbook Basic 1-6",
+              "2,200"
+            ]
+          ]
+        },
+        {
+          "header": "AZ PUBLISHERS",
+          "rows": [
+            [
+              "Creative Art & Colouring Beginners - Level 6",
+              "1,200"
+            ],
+            [
+              "Puzzle KG - Bk 5",
+              "1,000"
+            ],
+            [
+              "New Step in Mathematics Basic 1 - 3",
+              "2,800"
+            ],
+            [
+              "New Step in Mathematics Basic 4 - 6",
+              "2,800"
+            ],
+            [
+              "New Step in English Basic 1 - 3",
+              "2,800"
+            ],
+            [
+              "New Step in English Basic 4 - 6",
+              "2,800"
+            ],
+            [
+              "New Step in Maths/English Vol 1-4",
+              "3,000"
+            ],
+            [
+              "New Step in Mathematics JSS1 - 3",
+              "3,000"
+            ],
+            [
+              "New Step in English Study JSS1 - 3",
+              "3,000"
+            ],
+            [
+              "Grammar & Phonics Stage 1- 2",
+              "1,500"
+            ],
+            [
+              "Grammar & Phonics 1- 3",
+              "1,700"
+            ],
+            [
+              "Grammar & Phonics 4 - 6",
+              "1,800"
+            ],
+            [
+              "New Step in Verbal & Quantitative Vol1-4",
+              "2,700"
+            ],
+            [
+              "New Step in Verbal & Quantitative Bk 1-3",
+              "3,000"
+            ],
+            [
+              "New Step in Verbal & Quantitative Bk 4-6",
+              "3,200"
+            ],
+            [
+              "Writing Vol 1- Basic 6",
+              "1,200"
+            ],
+            [
+              "Maths / Eng. SS 1- 3",
+              "3,200"
+            ],
+            [
+              "Revision",
+              ""
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "header": "LITHOSITE BOOKS",
+          "rows": [
+            [
+              "Foundation Mathematics BK 1-3",
+              "3,100"
+            ],
+            [
+              "Foundation Mathematics BK 4-5",
+              "3,200"
+            ],
+            [
+              "Foundation Mathematics BK 6",
+              "3,700"
+            ],
+            [
+              "Essential English BK 1-3",
+              "3,100"
+            ],
+            [
+              "Essential English BK 4-5",
+              "3,200"
+            ],
+            [
+              "Essential English BK 6",
+              "3,700"
+            ],
+            [
+              "Introduction to Maths/English (KG)",
+              "3,200"
+            ],
+            [
+              "Universal Maths/English Vol 1-2",
+              "3,800"
+            ],
+            [
+              "Universal Maths/English Vol 3",
+              "4,000"
+            ],
+            [
+              "Fundamental Grammar Nur - Bk 3",
+              "2,000"
+            ],
+            [
+              "Fundamental Grammar Bk 4 - 6",
+              "2,200"
+            ],
+            [
+              "Essential Maths Bk 1- 3",
+              "3,750"
+            ],
+            [
+              "Essential Maths Bk 4- 6",
+              "4,050"
+            ],
+            [
+              "Introduction Colouring For Nursery Bk 1, 2 & 3",
+              "1,800"
+            ],
+            [
+              "Standard Verbal & Quantitative Vol 1-4",
+              "2,600"
+            ],
+            [
+              "Standard Verbal & Quantitative Bk 1-Bk6",
+              "2,850"
+            ],
+            [
+              "Brilliant Vocational Attitude Nursery",
+              "1,700"
+            ],
+            [
+              "Brilliant Vocational Attitude book 1 - 6",
+              "1,900"
+            ],
+            [
+              "Effective Science & Technology book 1-4",
+              "2,600"
+            ],
+            [
+              "Effective Science & Technology book 5-6",
+              "2,800"
+            ],
+            [
+              "Basic Computer & Technology Nursery",
+              "1,200"
+            ],
+            [
+              "Basic Computer & Technology Book 1-6",
+              "1,800"
+            ],
+            [
+              "Extensive National Value Bk 1-6",
+              "2,300"
+            ],
+            [
+              "Extensive National Value Jss 1-3",
+              "3,400"
+            ],
+            [
+              "Writing and Composition Nursery - Bk 3",
+              "1,600"
+            ],
+            [
+              "Writing and Composition Bk 4-6",
+              "1,700"
+            ],
+            [
+              "Pre-vocational Basic 4 - Jss 3",
+              "3,450"
+            ],
+            [
+              "B.S.T Combine Basic 1- 4",
+              "3,450"
+            ],
+            [
+              "B.S.T Combine Basic 5 - 6",
+              "4,650"
+            ],
+            [
+              "B.S.T Combine J S 1- 3",
+              "5,250"
+            ],
+            [
+              "History Basic 1 - 6",
+              "2,500"
+            ],
+            [
+              "History Jss 1 - 3",
+              "2,700"
+            ],
+            [
+              "Mathematics/English Jss 1 - 3",
+              "4,150"
+            ]
+          ]
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "header": "OHMS BOOKS",
+          "rows": [
+            [
+              "Handwriting Kg-Bk 6",
+              "1,200"
+            ],
+            [
+              "Art Stage 1-6",
+              "1,200"
+            ],
+            [
+              "Old Cultural Arts Basic 1-6",
+              "1,600"
+            ],
+            [
+              "New Cultural Arts Basic 1-6",
+              "2,700"
+            ],
+            [
+              "Writing & Creative Art Kg - Basic 6",
+              "1,400"
+            ],
+            [
+              "Home Economics Nur - Bk6 (Gold)",
+              "1,600"
+            ],
+            [
+              "Home Economics Nur - Bk6 (Silver)",
+              "1,600"
+            ],
+            [
+              "Prevocational Bk 1- 6",
+              "2,500"
+            ],
+            [
+              "P.H.E Basic 1-6",
+              "1,600"
+            ],
+            [
+              "Civic Education Basic 1-6",
+              "1,600"
+            ],
+            [
+              "Shapes and Colour for Nur",
+              "1,100"
+            ],
+            [
+              "Civic & Security Education Basic 1-6",
+              "1,600"
+            ],
+            [
+              "Moral Education Basic 1-6",
+              "1,600"
+            ],
+            [
+              "Spellings Pry 1-6",
+              "1,500"
+            ],
+            [
+              "Grammar Nur - Basic 6",
+              "2,500"
+            ],
+            [
+              "Health habits Nur1-3 (Silver)",
+              "1,400"
+            ],
+            [
+              "Health habits Nur1-3 (Gold)",
+              "1,700"
+            ],
+            [
+              "Moral Habits Nur1-3",
+              "1,600"
+            ],
+            [
+              "Cultural & Art JSS 1-3",
+              "3,000"
+            ],
+            [
+              "Economics JSS 1-3",
+              "2,000"
+            ],
+            [
+              "History Basic 1-6",
+              "1,600"
+            ],
+            [
+              "History JSS 1-3",
+              "2,000"
+            ],
+            [
+              "History SSS 1-3",
+              "2,200"
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "header": "OHMS STORY BOOKS",
+          "rows": [
+            [
+              "Day camp, Fun at hut, Don & Fen, Moonlight, Fun with pet",
+              "500"
+            ],
+            [
+              "Ungrateful hawk, Mike toy box, Joy & Joe, The sky",
+              "500"
+            ],
+            [
+              "Ani, Little Anne, The Trial, The Lion & the wise lamb,",
+              "500"
+            ],
+            [
+              "My dream, Sade and Chike, Agu & Mad cow, Bola & old man, Mum's old tales",
+              "500"
+            ],
+            [
+              "All is fun, Mum's new baby, The fox, Greedy Billy, Dino & Kino",
+              "500"
+            ],
+            [
+              "Pin box, Sam and rat, Two Young ones, Happy home",
+              "500"
+            ],
+            [
+              "Don and Joe, Seyi, Chi's mug, Greedy monkey, Ben and Ody",
+              "500"
+            ],
+            [
+              "Grandpa and the kids, Mysteries bird, Fully doll, Sarah",
+              "500"
+            ],
+            [
+              "Lost pot, White dove, Sun-Moon & Star, Auntie Joke",
+              "500"
+            ],
+            [
+              "New Beginning, Ajike, Omolara",
+              "1,300"
+            ],
+            [
+              "Sequacious child, The Tongue, Beggar dream, Better late",
+              "800"
+            ],
+            [
+              "Tortoise and the fisherman, Nightmare, New dawn, Future is not for sale",
+              "800"
+            ],
+            [
+              "Oduma, Tough time, Competition",
+              "1,200"
+            ],
+            [
+              "Grammarian, I am different,",
+              "1,200"
+            ]
+          ]
+        },
+        {
+          "header": "EPH PUBLISHER",
+          "rows": [
+            [
+              "Learning English for Pry 1 - 6",
+              "2,900"
+            ],
+            [
+              "Learning Maths for Pry 1 - 6",
+              "2,900"
+            ],
+            [
+              "Learning Eng/Maths Pre-Prim 1-4",
+              "2,900"
+            ],
+            [
+              "Learning Verbal & Quantitative for Pry 1 - 6",
+              "2,600"
+            ],
+            [
+              "Genius Eng/Maths for Pre-Prim 1-2",
+              "2,900"
+            ],
+            [
+              "Genius Eng/Maths for Pre-Prim 3-4",
+              "3,000"
+            ],
+            [
+              "EPH Verbal & Quantitative Kg -Basic 5",
+              "2,300"
+            ],
+            [
+              "EPH Verbal & Quantitative Basic 6",
+              "2,100"
+            ],
+            [
+              "Writing Pre-Primary -Basic 6",
+              "1,300"
+            ],
+            [
+              "Fine & Creative Art Crech - Stage 4",
+              "1,250"
+            ]
+          ]
+        },
+        {
+          "header": "EMPEROR PUBLISHER",
+          "rows": [
+            [
+              "Brainpower English Basic 1 - 3",
+              "3,500"
+            ],
+            [
+              "Brainpower English Basic 4 - 6",
+              "3,600"
+            ],
+            [
+              "Brainpower Maths Basic 1 - 3",
+              "3,500"
+            ],
+            [
+              "Brainpower Maths Basic 4 - 6",
+              "3,600"
+            ],
+            [
+              "Brainpower Verbal & Quantitative Basic 1 - 6",
+              "4,500"
+            ]
+          ]
+        },
+        {
+          "header": "SOLUTION PUBLISHER",
+          "rows": [
+            [
+              "Perfect Kid Writing Beginner - Basic 6",
+              "1,500"
+            ]
+          ]
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "header": "GODFIRST STORY BOOKS",
+          "rows": [
+            [
+              "Tummy Trouble",
+              "550"
+            ],
+            [
+              "Ape & Hat, The jam, The bay, Obi's Doe, Slypal, Ox & Fox",
+              "500"
+            ],
+            [
+              "The vet, Mum's new mug, Dad old car, Chi's new pet, My Pet & I, Bola & Chika, Bob & Meg",
+              "500"
+            ],
+            [
+              "Lazy bird, New car, Tina's kite, Old den, Joy's day, Lesson for all",
+              "500"
+            ],
+            [
+              "Mia's kits, Bear & bee, Jim Hot pan, Ade's ear, The spy",
+              "500"
+            ],
+            [
+              "Obedient child, new leaf, Two friends, Who cap fit, naked truth, Little Buzor",
+              "500"
+            ],
+            [
+              "Dad's lost key, so many lies, Nike",
+              "500"
+            ],
+            [
+              "Peace maker, Danger, Role model, Good idea, Help from kids, Obedient boy,",
+              "500"
+            ],
+            [
+              "Ken's families, Lesson that pays, Nathan, Incredible friend, Lost but found",
+              "500"
+            ],
+            [
+              "Stingy boy, Biola's tail, Bundle of joy, Good defect evil, To be the best, Ola & the ant",
+              "500"
+            ],
+            [
+              "Uzo & his dad, Ted & Kim, Roy's kid, James & Tom, Chicks everywhere, Boat trip, Mum saved the day",
+              "500"
+            ],
+            [
+              "Hidden truth, Seed of success, Enitan, A great lesson",
+              "600"
+            ],
+            [
+              "Magic box, From slum to glory, Kind uncle, great reward, Trip by train, Catch them young, Ipade awon alagbara",
+              "600"
+            ],
+            [
+              "Wise saver, Future tears, Angelic mother, change your ways, match box, Daniel",
+              "600"
+            ],
+            [
+              "Gold mine, spare the rod, rejected stone, gift the lucky child, sweet memories, twist of fate",
+              "700"
+            ],
+            [
+              "Guilty one, Cornerstone, Change of heart, Nemesis, Back to square one, Thief of time, Treasure in reading",
+              "700"
+            ],
+            [
+              "Grass to grace, unknown secret, the clown, wasted years, problem shared, pot of fortune, a dream come true",
+              "700"
+            ],
+            [
+              "Fulfilled destiny, core circle, What goes around, Doctor folahan, Story time, Village Scenerio",
+              "700"
+            ],
+            [
+              "Future leader, eye opener, Agonies of endurance, Tit for tat, Ayorunbo, Gbogbo lomo",
+              "700"
+            ],
+            [
+              "Patriotic child, Dare to succeed",
+              "700"
+            ],
+            [
+              "Had I know, Journey of life, Two wings of a bird, Against all odd",
+              "800"
+            ],
+            [
+              "Prize of misbehaviour, spare the rod",
+              "850"
+            ],
+            [
+              "Freedom to excel",
+              "1,100"
+            ]
+          ]
+        },
+        {
+          "header": "GODFIRST BOOKS",
+          "rows": [
+            [
+              "Brillant Scholar Verbal & Quantitative Bk 1-6",
+              "2,700"
+            ],
+            [
+              "Right Approach Verbal & Quantitative Vol 1 to Basic 6",
+              "2,500"
+            ],
+            [
+              "Right Approach Maths Basic 1-6",
+              "2,500"
+            ],
+            [
+              "Right Approach English Basic 1-3",
+              "3,500"
+            ],
+            [
+              "Right Approach English Basic 4-6",
+              "3,200"
+            ],
+            [
+              "Right Approach Mathematics & English Vol. 1 - 4",
+              "2,500"
+            ],
+            [
+              "Iwe Ede Yoruba (Omo Elede) Alakoobeere-basic 6",
+              "1,200"
+            ],
+            [
+              "Brillant Scholar Intermediate Science with work book ss1-3",
+              "2,500"
+            ],
+            [
+              "Scribblings",
+              "1,500"
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "header": "AKPAN ANIEFIOK",
+          "rows": [
+            [
+              "Comprehensive Vocational Vol 1 & 2",
+              "1,700"
+            ],
+            [
+              "Comprehensive Vocational Bk 1 - 6",
+              "2,000"
+            ],
+            [
+              "Eko Past Question & Answer (Lagos)",
+              ""
+            ],
+            [
+              "Best Choice Past Question & Answer (Ogun)",
+              ""
+            ]
+          ]
+        },
+        {
+          "header": "GLOBAL KIDS BOOKS",
+          "rows": [
+            [
+              "Computer for Nur 1 & 2",
+              "1,200"
+            ],
+            [
+              "Computer for Basic 1 - 6",
+              "1,400"
+            ],
+            [
+              "Composition for Nursery 2-basic 6",
+              "1,200"
+            ],
+            [
+              "Writing Vol 1 - Bk 6",
+              "1,200"
+            ],
+            [
+              "Handwriting & Colouring Vol 1 - Bk 6",
+              "1,450"
+            ]
+          ]
+        },
+        {
+          "header": "UNIQUE PUBLISHERS",
+          "rows": [
+            [
+              "Verbal & Quantitative Beginners-Nur3",
+              "2,500"
+            ],
+            [
+              "Verbal & Quantitative Basic 1-6",
+              "1,800"
+            ]
+          ]
+        },
+        {
+          "header": "SUPER PUBLISHERS",
+          "rows": [
+            [
+              "Perfect Palms Verbal & Quantitative Vol 1 - Bk 6",
+              "2,700"
+            ],
+            [
+              "Perfect Palms Math & English Vol 2 - Vol 4",
+              "3,000"
+            ],
+            [
+              "Perfect Palms Math & English Beginners 3 in 1",
+              "4,500"
+            ],
+            [
+              "Perfect Palms Creative Art & Colouring Vol 1 - 4",
+              "1,300"
+            ],
+            [
+              "Perfect Palms scribble Pre-school",
+              "1,800"
+            ]
+          ]
+        },
+        {
+          "header": "MATTHEW A. OLAGUNJU",
+          "rows": [
+            [
+              "Approach Phonics Kg & Nur",
+              "2,000"
+            ],
+            [
+              "Approach Phonics Basic 1 - 6",
+              "1,800"
+            ]
+          ]
+        },
+        {
+          "header": "SMART THINKER",
+          "rows": [
+            [
+              "Verbal & Quantitative Vol 1 - 4",
+              "2,000"
+            ]
+          ]
+        },
+        {
+          "header": "EFFECTIVE",
+          "rows": [
+            [
+              "Weekly Vol 1 & Vol 2",
+              "700"
+            ],
+            [
+              "Weekly Vol 3 - Bk 6",
+              "1,000"
+            ]
+          ]
+        },
+        {
+          "header": "TRANAZ",
+          "rows": [
+            [
+              "Weekly Vol 1 - Bk 6",
+              "800"
+            ],
+            [
+              "Weekly JSS 1 - SSS 3",
+              "1,200"
+            ]
+          ]
+        },
+        {
+          "header": "FIGTEXT PUBLISHER",
+          "rows": [
+            [
+              "Maths & Eng. Beginners Vol 1&2",
+              ""
+            ],
+            [
+              "Colouring Vol 1&2",
+              ""
+            ]
+          ]
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "header": "SAWAB BOOK",
+          "rows": [
+            [
+              "Scribble Vol 1 & 2",
+              "1,200"
+            ],
+            [
+              "The bell, One good turn, Two naught boys, Tomori",
+              "550"
+            ],
+            [
+              "Adigun, Laide, Zero to Hero, Two old woman & Greedy servant",
+              "550"
+            ],
+            [
+              "Mukaila, Wasted talent, Bitter exprience, A stranger & kids",
+              "600"
+            ],
+            [
+              "Naomi",
+              "500"
+            ]
+          ]
+        },
+        {
+          "header": "UCF BOOKS GROUP (STORY BOOKS)",
+          "rows": [
+            [
+              "Mysteries of animal Kingdom, Who will rule our land, 72 hours",
+              "1,050"
+            ],
+            [
+              "Ade goes to Osogbo, Torty and the Bee",
+              "850"
+            ],
+            [
+              "Chioma, True Beauty, Why Tortories, Bone of Contention",
+              "700"
+            ],
+            [
+              "Pinky and the greedy mouse, As they made their beds, Everyone loves charlie",
+              "650"
+            ],
+            [
+              "Moonlight Stories, The Mysterious thief, Roys pet, Too late, Magic words, Mofe",
+              "650"
+            ],
+            [
+              "Lost money, Ani's clay hut, Ada & the down town doll, HAP & the Earth, Two good pals",
+              "650"
+            ],
+            [
+              "Peppy, Old woman's daughter, Trial, Abeni, Oh what have I done, Tani, Honest apprentice",
+              "800"
+            ],
+            [
+              "Focus girls, Serves you right, Star boy, A man character, Creed of success, Gifted hand, New boy",
+              "750"
+            ],
+            [
+              "Ahmed & the angry boy, Ike & the lost boy, A heart that care",
+              "600"
+            ],
+            [
+              "Bob & Maigc bird, The taxi driver, Obi & the little garden, Aweni",
+              "850"
+            ],
+            [
+              "Adventure of Eze, Little Berbie, Saved by his talent",
+              "780"
+            ],
+            [
+              "A child of circumstance, Lost family, Game changer, Undercover agent, Turning tide",
+              "1,200"
+            ],
+            [
+              "The inheritance",
+              "1,400"
+            ],
+            [
+              "Cindy's Birthday Party/Finding Cindy (2 books in 1)",
+              "1,200"
+            ],
+            [
+              "Exceptional Art & Colouring Pre-primary Vol 1 - 4",
+              "1,100"
+            ],
+            [
+              "Exceptional Handwriting Pre-primary Vol 1 - 4",
+              "1,200"
+            ],
+            [
+              "Creative Mind English Composition Bk 1 - 6",
+              "1,500"
+            ]
+          ]
+        },
+        {
+          "header": "WONDERFUL FOCUS PUBLISHERS",
+          "rows": [
+            [
+              "Maths Bk1 - 6",
+              "2,800"
+            ],
+            [
+              "English Bk1 - 6",
+              "2,800"
+            ],
+            [
+              "Computer Nur - Basic 6",
+              "1,500"
+            ],
+            [
+              "Vocational Basic 1 - 6",
+              "1,500"
+            ],
+            [
+              "Grammar Basic 1 - 6",
+              "1,500"
+            ],
+            [
+              "Maths / Eng 3 in 1 Stage 1",
+              "4,500"
+            ],
+            [
+              "Maths / Eng 2 in 1 Stage 1 - 4",
+              "3,000"
+            ]
+          ]
+        }
+      ],
+      []
+    ]
+  ]
+};

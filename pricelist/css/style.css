@@ -1,0 +1,647 @@
+/* ── Design tokens ─────────────────────────────────────────────────────────── */
+:root {
+  --ink: #0f1b2d;
+  --ink-soft: #4a5568;
+  --navy: #0b192c;
+  --navy-light: #1e3e62;
+  --emerald: #00875a;
+  --emerald-light: #10b981;
+  --gold: #f59e0b;
+  --gold-light: #fbbf24;
+  --gold-bg: #fffbe6;
+  --cream: #f8fafc;
+  --paper: #ffffff;
+  --border: #e2e8f0;
+  --row-alt: #f8fafc;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-lg: 0 12px 30px rgba(0,0,0,0.12);
+  --radius: 16px;
+  --radius-sm: 10px;
+  --radius-pill: 9999px;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 130px;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 70px;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; cursor: pointer; border: none; background: none; }
+
+/* ── Top Announcement ─────────────────────────────────────────────────────── */
+.top-bar {
+  background: var(--navy);
+  color: #94a3b8;
+  font-size: 0.75rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.top-bar__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.top-bar__note {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.top-bar__phones {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.top-bar__phones a {
+  color: #cbd5e1;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.top-bar__phones a:hover {
+  color: var(--gold-light);
+}
+
+/* ── Hero ──────────────────────────────────────────────────────────────────── */
+.hero {
+  position: relative;
+  background: linear-gradient(145deg, #0b192c 0%, #1e3e62 50%, #004d40 100%);
+  color: #fff;
+  padding: 1.5rem 0 1.75rem;
+  box-shadow: var(--shadow-md);
+}
+
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.25rem;
+}
+
+.hero__brand-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.hero__logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: var(--shadow-lg);
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  background: #fff;
+}
+
+.hero__eyebrow {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+
+.hero__title {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #ffffff;
+  margin-top: 0.1rem;
+}
+
+.hero__edition {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 0.25rem;
+  font-weight: 500;
+}
+
+/* Mobile Friendly Quick Action Buttons */
+.hero__actions {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 440px;
+  gap: 0.6rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: all 0.15s ease;
+  text-align: center;
+  flex: 1;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn--primary {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+  color: #0b192c;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.35);
+}
+
+.btn--whatsapp {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.35);
+}
+
+.btn--ghost {
+  border: 1.5px solid var(--border);
+  color: var(--ink-soft);
+  padding: 0.6rem 1.25rem;
+}
+
+/* Phone Quick Call Bar under Hero */
+.hero__contact-pills {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.phone-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #fff;
+  backdrop-filter: blur(4px);
+}
+
+.phone-pill svg {
+  width: 13px;
+  height: 13px;
+  fill: currentColor;
+  opacity: 0.85;
+}
+
+/* ── Sticky Toolbar & Publisher Chips ─────────────────────────────────────── */
+.sticky-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(248, 250, 252, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.toolbar {
+  padding: 0.6rem 0;
+}
+
+.toolbar__inner {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.search {
+  flex: 1;
+  position: relative;
+}
+
+.search__icon {
+  position: absolute;
+  left: 0.85rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 17px;
+  height: 17px;
+  color: var(--ink-soft);
+  pointer-events: none;
+}
+
+.search__input {
+  width: 100%;
+  padding: 0.6rem 2.2rem 0.6rem 2.4rem;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-pill);
+  background: var(--paper);
+  font-size: 0.88rem;
+  color: var(--ink);
+  transition: all 0.15s ease;
+}
+
+.search__input:focus {
+  outline: none;
+  border-color: var(--emerald-light);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+}
+
+.search__clear {
+  position: absolute;
+  right: 0.65rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  color: var(--ink-soft);
+  font-size: 1.1rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s;
+}
+
+.search__clear.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.toolbar__count {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.toolbar__count span {
+  font-weight: 700;
+  color: var(--navy);
+}
+
+/* Horizontal Scrollable Publisher Chips */
+.publisher-chips {
+  display: flex;
+  overflow-x: auto;
+  gap: 0.4rem;
+  padding: 0.4rem 1rem 0.6rem;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+
+.publisher-chips::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.chip-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-pill);
+  background: var(--paper);
+  border: 1px solid var(--border);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+}
+
+.chip-link:active,
+.chip-link.active {
+  background: var(--navy);
+  color: #fff;
+  border-color: var(--navy);
+}
+
+.chip-link .chip-count {
+  background: rgba(0,0,0,0.06);
+  color: inherit;
+  font-size: 0.7rem;
+  padding: 0.15rem 0.45rem;
+  border-radius: var(--radius-pill);
+}
+
+.chip-link.active .chip-count {
+  background: rgba(255,255,255,0.2);
+}
+
+/* ── Main Layout ───────────────────────────────────────────────────────────── */
+.layout {
+  padding-top: 1.25rem;
+}
+
+.catalog__intro {
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.catalog__intro h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--navy);
+  margin-bottom: 0.2rem;
+}
+
+.catalog__intro p {
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  margin-inline: auto;
+}
+
+/* ── Catalog Section Cards ─────────────────────────────────────────────────── */
+.section-card {
+  background: var(--paper);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 1.25rem;
+  overflow: hidden;
+}
+
+.section-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+  color: #fff;
+  gap: 0.75rem;
+}
+
+.section-card__header h3 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.section-card__badge {
+  background: rgba(255, 255, 255, 0.18);
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.72rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Mobile Optimized Price Table */
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.price-table tr {
+  border-bottom: 1px solid var(--border);
+}
+
+.price-table tr:last-child {
+  border-bottom: none;
+}
+
+.price-table tr:nth-child(even) {
+  background: var(--row-alt);
+}
+
+.price-table td {
+  padding: 0.75rem 0.85rem;
+  font-size: 0.85rem;
+  vertical-align: middle;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.price-table td:first-child {
+  color: var(--ink);
+  line-height: 1.4;
+  font-weight: 500;
+  width: auto;
+}
+
+.price-table td:last-child {
+  text-align: right;
+  vertical-align: middle;
+  width: 110px;
+  white-space: nowrap;
+}
+
+.price-tag {
+  display: inline-block;
+  background: var(--gold-bg);
+  color: #92400e;
+  font-weight: 700;
+  font-size: 0.82rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+
+.price-tag--empty {
+  background: transparent;
+  border-color: transparent;
+  color: #cbd5e1;
+  font-weight: 400;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--ink-soft);
+}
+
+.empty-state p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+/* ── Contact Section ───────────────────────────────────────────────────────── */
+.contact {
+  background: var(--navy);
+  color: #fff;
+  padding: 2.25rem 0;
+  margin-top: 2rem;
+}
+
+.contact__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contact__copy {
+  text-align: center;
+}
+
+.contact__copy h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.contact__copy p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.85rem;
+}
+
+.contact__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1rem;
+  transition: background 0.15s;
+}
+
+.contact-card:active {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.contact-card__icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--gold-light);
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.contact-card__label {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.65);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.contact-card__phone {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+/* ── Footer ────────────────────────────────────────────────────────────────── */
+.footer {
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--border);
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  text-align: center;
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* ── Floating WhatsApp Action Button ────────────────────────────────────────── */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #25d366;
+  color: #fff;
+  padding: 0.65rem 1.15rem;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+  font-weight: 700;
+  font-size: 0.85rem;
+  transition: transform 0.15s ease;
+}
+
+.floating-whatsapp:active {
+  transform: scale(0.95);
+}
+
+.floating-whatsapp svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* ── Breakpoints ────────────────────────────────────────────────────────────── */
+@media (min-width: 640px) {
+  .hero__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .hero__brand-box {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hero__actions {
+    width: auto;
+  }
+
+  .contact__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .contact__copy {
+    text-align: left;
+  }
+}
+
