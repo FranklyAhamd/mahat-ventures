@@ -19,8 +19,8 @@
   --radius: 16px;
   --radius-sm: 10px;
   --radius-pill: 9999px;
-  --font-display: "Cormorant Garamond", Georgia, serif;
-  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Outfit", -apple-system, sans-serif;
+  --font-body: "Plus Jakarta Sans", -apple-system, sans-serif;
 }
 
 *, *::before, *::after {
