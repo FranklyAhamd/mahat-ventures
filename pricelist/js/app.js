@@ -40,11 +40,6 @@
     $("#footer-edition").textContent = catalog.edition;
     $("#year").textContent = new Date().getFullYear();
 
-    const phonesHtml = catalog.phones
-      .map((p) => `<a href="${phoneLink(p)}">${p}</a>`)
-      .join("");
-    $("#top-phones").innerHTML = phonesHtml;
-
     const orderMsg = `Hello ${catalog.brand}, I would like to make an enquiry/order from your ${catalog.edition}.`;
     const waUrl = whatsappLink(catalog.phones[0], orderMsg);
     $("#whatsapp-btn").href = waUrl;

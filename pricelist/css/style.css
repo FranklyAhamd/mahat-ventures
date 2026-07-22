@@ -55,42 +55,6 @@ img { max-width: 100%; display: block; }
 a { color: inherit; text-decoration: none; }
 button { font: inherit; cursor: pointer; border: none; background: none; }
 
-/* ── Top Announcement ─────────────────────────────────────────────────────── */
-.top-bar {
-  background: var(--navy);
-  color: #94a3b8;
-  font-size: 0.75rem;
-  padding: 0.4rem 0;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
-}
-
-.top-bar__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.top-bar__note {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-}
-
-.top-bar__phones {
-  display: flex;
-  gap: 0.6rem;
-}
-
-.top-bar__phones a {
-  color: #cbd5e1;
-  font-size: 0.72rem;
-  font-weight: 600;
-}
-
-.top-bar__phones a:hover {
-  color: var(--gold-light);
-}
-
 /* ── Hero ──────────────────────────────────────────────────────────────────── */
 .hero {
   position: relative;
