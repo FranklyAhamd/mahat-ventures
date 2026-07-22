@@ -207,7 +207,10 @@
               const isActive = l.dataset.id === id;
               l.classList.toggle("active", isActive);
               if (isActive && chipsContainer) {
-                l.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+                chipsContainer.scrollTo({
+                  left: l.offsetLeft - chipsContainer.offsetWidth / 2 + l.offsetWidth / 2,
+                  behavior: "smooth"
+                });
               }
             });
           }
