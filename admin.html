@@ -271,11 +271,34 @@
     <button class="btn btn--primary" id="btn-save">💾 Save Prices to Database</button>
   </div>
 
+  <!-- Custom Password Modal -->
+  <div class="prompt-overlay" id="auth-overlay">
+    <div class="prompt-modal" style="max-width: 360px;">
+      <h3 class="prompt-title">🔒 Admin Authentication</h3>
+      <p class="prompt-desc">Enter the administrator password to access the dashboard.</p>
+      
+      <div class="form-group" style="position: relative; margin-bottom: 1.5rem;">
+        <input type="password" id="auth-password" placeholder="Enter password" style="width: 100%; padding: 0.75rem 2.5rem 0.75rem 1rem; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-size: 0.95rem; box-sizing: border-box;">
+        <button id="auth-toggle-pwd" style="position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); border: none; background: none; color: var(--ink-soft); cursor: pointer; padding: 0; display: flex; align-items: center;" type="button" aria-label="Toggle password visibility">
+          <svg id="eye-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+          </svg>
+        </button>
+      </div>
+
+      <div class="prompt-actions">
+        <button class="btn-prompt-cancel" onclick="window.location.href='pricelist/index.html'">Cancel</button>
+        <button class="btn-prompt-add" id="auth-submit" style="background: var(--navy);">Access Dashboard</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Firebase SDKs -->
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
 
-  <script src="pricelist/js/db.js?v=5"></script>
-  <script src="admin.js?v=5"></script>
+  <script src="pricelist/js/db.js?v=7"></script>
+  <script src="admin.js?v=7"></script>
 </body>
 </html>

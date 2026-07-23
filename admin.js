@@ -1,20 +1,58 @@
 // admin.js — MAHAT Admin Dashboard
 
 document.addEventListener("DOMContentLoaded", async () => {
-  // ── Auth ────────────────────────────────────────────────────────────────────
-  const pwd = prompt("Enter Admin Password:");
-  if (pwd !== "mahatadmin123") {
-    alert("Incorrect password!");
-    document.body.innerHTML = `
-      <div style="display:flex;align-items:center;justify-content:center;height:100vh;font-family:sans-serif;flex-direction:column;gap:1rem">
-        <h1 style="color:#ef4444">Access Denied</h1>
-        <p>Incorrect password. <a href="pricelist/index.html">Go back to store</a></p>
-      </div>`;
-    return;
-  }
+  // ── Auth & Eye Toggle ────────────────────────────────────────────────────────
+  const authOverlay = document.getElementById("auth-overlay");
+  const authPassword = document.getElementById("auth-password");
+  const authTogglePwd = document.getElementById("auth-toggle-pwd");
+  const authSubmit = document.getElementById("auth-submit");
+  const eyeIcon = document.getElementById("eye-icon");
+
+  authTogglePwd.addEventListener("click", () => {
+    if (authPassword.type === "password") {
+      authPassword.type = "text";
+      eyeIcon.innerHTML = `
+        <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+        <line x1="1" y1="1" x2="23" y2="23"></line>
+      `;
+    } else {
+      authPassword.type = "password";
+      eyeIcon.innerHTML = `
+        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+        <circle cx="12" cy="12" r="3"></circle>
+      `;
+    }
+  });
+
+  const checkAuth = async () => {
+    if (authPassword.value === "mahatadmin123") {
+      authOverlay.hidden = true;
+      try {
+        setLoading(true);
+        catalogData = await window.loadDatabaseCatalog();
+        setLoading(false);
+        renderEditor();
+      } catch (e) {
+        setLoading(false);
+        showToast("Error loading catalog data. Check console.", "error");
+        console.error(e);
+      }
+    } else {
+      alert("Incorrect password!");
+    }
+  };
+
+  authSubmit.addEventListener("click", checkAuth);
+  authPassword.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") checkAuth();
+  });
+
+  // Focus input automatically
+  setTimeout(() => authPassword.focus(), 100);
 
   let catalogData = null;
 
+  // Defer database load until after authentication
   // ── Toast ────────────────────────────────────────────────────────────────────
   function showToast(msg, type = "success") {
     const t = document.getElementById("toast");
@@ -34,18 +72,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     return text.toLowerCase().trim().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "section";
   }
 
-  // ── Load catalog ─────────────────────────────────────────────────────────────
-  try {
-    setLoading(true);
-    catalogData = await window.loadDatabaseCatalog();
-    setLoading(false);
-    renderEditor();
-  } catch (e) {
-    setLoading(false);
-    showToast("Error loading catalog data. Check console.", "error");
-    console.error(e);
-  }
-
+  // Render editor will be called inside checkAuth() now
   // ── Render editor ────────────────────────────────────────────────────────────
   function renderEditor() {
     document.getElementById("brand-input").value = catalogData.brand || "";
