@@ -131,7 +131,7 @@
         const rows = cat.items
           .map((item) => {
             const price = formatPrice(item.price);
-            const priceNum = Number(item.price) || 0;
+            const priceNum = Number(String(item.price).replace(/,/g, '')) || 0;
             const priceCell = price
               ? `<div class="price-cell-inner"><span class="price-tag">${price}</span> <button class="btn-add-cart" data-title="${escapeAttr(item.title)}" data-price="${priceNum}">+ Add</button></div>`
               : `<span class="price-tag price-tag--empty">—</span>`;
