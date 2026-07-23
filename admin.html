@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | MAHAT Multi-Purpose Venture</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="pricelist/css/style.css">
+  <style>
+    body { background: #f1f5f9; padding-bottom: 2rem; }
+    .admin-header {
+      background: var(--navy);
+      color: #fff;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .admin-header h1 { font-family: var(--font-display); }
+    .admin-card {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 2rem;
+    }
+    .admin-card h2 { margin-bottom: 1rem; color: var(--navy); }
+    .form-group { margin-bottom: 1rem; }
+    .form-group label { display: block; font-weight: 600; margin-bottom: 0.5rem; }
+    .form-group input { width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); }
+    .category-block { margin-bottom: 2.5rem; border: 1px solid var(--border); border-radius: var(--radius-sm); overflow: hidden; }
+    .category-header { background: var(--row-alt); padding: 1rem; font-weight: 700; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+    .category-items { padding: 1rem; }
+    .item-row { display: flex; gap: 1rem; margin-bottom: 0.5rem; align-items: center; }
+    .item-row input[type="text"] { flex: 2; }
+    .item-row input[type="number"] { flex: 1; }
+    .btn-remove { background: #fee2e2; color: #ef4444; border: none; padding: 0.5rem 1rem; border-radius: var(--radius-sm); cursor: pointer; }
+    .btn-add { background: var(--row-alt); color: var(--navy); border: 1px dashed var(--navy); padding: 0.5rem 1rem; border-radius: var(--radius-sm); cursor: pointer; width: 100%; margin-top: 0.5rem; }
+    .admin-actions { position: sticky; bottom: 0; background: #fff; padding: 1rem; box-shadow: 0 -4px 12px rgba(0,0,0,0.05); display: flex; justify-content: flex-end; gap: 1rem; border-top: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+
+  <header class="admin-header">
+    <div class="container">
+      <h1>Admin Dashboard</h1>
+      <p>Edit prices and export a new catalog.json file.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="admin-card">
+      <h2>General Settings</h2>
+      <div class="form-group">
+        <label>Brand Name</label>
+        <input type="text" id="brand-input">
+      </div>
+      <div class="form-group">
+        <label>Edition Text</label>
+        <input type="text" id="edition-input">
+      </div>
+      <div class="form-group">
+        <label>WhatsApp Phone Numbers (Comma separated)</label>
+        <input type="text" id="phones-input">
+      </div>
+    </div>
+
+    <div class="admin-card">
+      <h2>Categories & Prices</h2>
+      <div id="editor-container"></div>
+    </div>
+  </main>
+
+  <div class="admin-actions">
+    <button class="btn btn--ghost" onclick="window.location.href='index.html'">Cancel</button>
+    <button class="btn btn--primary" id="btn-export">Download New catalog.json</button>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

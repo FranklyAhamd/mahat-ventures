@@ -85,6 +85,8 @@
       .join("");
   }
 
+  let cart = [];
+
   function renderSections(categories) {
     const container = $("#catalog-sections");
     container.innerHTML = categories
@@ -92,8 +94,9 @@
         const rows = cat.items
           .map((item) => {
             const price = formatPrice(item.price);
+            const priceNum = Number(item.price) || 0;
             const priceCell = price
-              ? `<span class="price-tag">${price}</span>`
+              ? `<div class="price-cell-inner"><span class="price-tag">${price}</span> <button class="btn-add-cart" data-title="${escapeAttr(item.title)}" data-price="${priceNum}">+ Add</button></div>`
               : `<span class="price-tag price-tag--empty">—</span>`;
             return `<tr data-title="${escapeAttr(item.title.toLowerCase())}"><td>${escapeHtml(item.title)}</td><td>${priceCell}</td></tr>`;
           })
@@ -114,6 +117,112 @@
 
     updateItemCount(countItems(categories));
   }
+
+  function updateCartUI() {
+    const totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
+    $("#cart-badge").textContent = totalQty;
+    $("#floating-cart").style.display = totalQty > 0 ? "flex" : "none";
+    
+    const container = $("#cart-items-container");
+    if (cart.length === 0) {
+      container.innerHTML = `<div class="cart-empty">Your cart is empty</div>`;
+      $("#cart-grand-total").textContent = "₦0";
+      return;
+    }
+
+    let totalAmount = 0;
+    container.innerHTML = cart.map((item, index) => {
+      const itemTotal = item.price * item.qty;
+      totalAmount += itemTotal;
+      return `
+        <div class="cart-item">
+          <div class="cart-item-details">
+            <div class="cart-item-title">${escapeHtml(item.title)}</div>
+            <div class="cart-item-price">₦${item.price.toLocaleString()} x ${item.qty} = ₦${itemTotal.toLocaleString()}</div>
+          </div>
+          <div class="cart-item-actions">
+            <button class="cart-qty-btn" data-index="${index}" data-delta="-1">-</button>
+            <span class="cart-qty">${item.qty}</span>
+            <button class="cart-qty-btn" data-index="${index}" data-delta="1">+</button>
+          </div>
+        </div>
+      `;
+    }).join("");
+
+    $("#cart-grand-total").textContent = `₦${totalAmount.toLocaleString()}`;
+  }
+
+  function setupCart() {
+    $("#catalog-sections").addEventListener("click", (e) => {
+      if (e.target.classList.contains("btn-add-cart")) {
+        const title = e.target.dataset.title;
+        const price = Number(e.target.dataset.price);
+        
+        let qtyStr = prompt(`How many copies of "${title}" would you like to add?`, "1");
+        if (qtyStr === null) return;
+        const qty = parseInt(qtyStr, 10);
+        if (isNaN(qty) || qty <= 0) return;
+
+        const existing = cart.find(i => i.title === title);
+        if (existing) {
+          existing.qty += qty;
+        } else {
+          cart.push({ title, price, qty });
+        }
+        updateCartUI();
+      }
+    });
+
+    $("#cart-items-container").addEventListener("click", (e) => {
+      if (e.target.classList.contains("cart-qty-btn")) {
+        const index = parseInt(e.target.dataset.index, 10);
+        const delta = parseInt(e.target.dataset.delta, 10);
+        if (cart[index]) {
+          cart[index].qty += delta;
+          if (cart[index].qty <= 0) {
+            cart.splice(index, 1);
+          }
+          updateCartUI();
+        }
+      }
+    });
+
+    $("#floating-cart").addEventListener("click", () => {
+      $("#cart-overlay").hidden = false;
+    });
+
+    $("#cart-close").addEventListener("click", () => {
+      $("#cart-overlay").hidden = true;
+    });
+
+    $("#cart-overlay").addEventListener("click", (e) => {
+      if (e.target === $("#cart-overlay")) {
+        $("#cart-overlay").hidden = true;
+      }
+    });
+
+    $("#checkout-btn").addEventListener("click", () => {
+      if (cart.length === 0) return;
+      let text = "Hello! I would like to place an order:\\n\\n";
+      let total = 0;
+      cart.forEach(item => {
+        text += `- ${item.qty}x ${item.title} (₦${(item.price * item.qty).toLocaleString()})\\n`;
+        total += item.price * item.qty;
+      });
+      text += `\\n*Total: ₦${total.toLocaleString()}*`;
+      
+      const phone = catalog.phones && catalog.phones[0] ? catalog.phones[0].replace(/\\D/g, "") : "";
+      if (!phone) {
+        alert("Phone number not found in catalog!");
+        return;
+      }
+      const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+      window.open(url, "_blank");
+    });
+
+    updateCartUI();
+  }
+
 
   function escapeHtml(text) {
     const d = document.createElement("div");
@@ -237,6 +346,7 @@
       renderSections(catalog.categories);
       setupSearch();
       setupNavSync();
+      setupCart();
     } catch (err) {
       $("#catalog-sections").innerHTML = `<p class="empty-state">Failed to load price list. Please refresh the page.</p>`;
       console.error(err);
