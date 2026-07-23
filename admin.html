@@ -71,9 +71,15 @@
 
   <div class="admin-actions">
     <button class="btn btn--ghost" onclick="window.location.href='index.html'">Cancel</button>
-    <button class="btn btn--primary" id="btn-export">Download New catalog.json</button>
+    <button class="btn btn--primary" id="btn-save">Save Prices to Database</button>
   </div>
 
+  <!-- Firebase App (the core Firebase SDK) -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <!-- Firebase Realtime Database -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  
+  <script src="pricelist/js/db.js"></script>
   <script src="admin.js"></script>
 </body>
 </html>

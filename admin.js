@@ -1,10 +1,17 @@
 document.addEventListener("DOMContentLoaded", async () => {
+  // Simple password check to prevent random access
+  const pwd = prompt("Enter Admin Password:");
+  if (pwd !== "mahatadmin123") {
+    alert("Incorrect password!");
+    document.body.innerHTML = "<h1>Access Denied</h1>";
+    return;
+  }
+
   let catalogData = null;
 
   try {
-    const res = await fetch("pricelist/data/catalog.json");
-    if (!res.ok) throw new Error("Failed to load catalog.json");
-    catalogData = await res.json();
+    // Load from DB (or fallback)
+    catalogData = await window.loadDatabaseCatalog();
     renderEditor();
   } catch (e) {
     alert("Error loading catalog data.");
@@ -86,25 +93,30 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   }
 
-  document.getElementById("btn-export").addEventListener("click", () => {
+  document.getElementById("btn-save").addEventListener("click", async () => {
     if (!catalogData) return;
     
     catalogData.brand = document.getElementById("brand-input").value;
     catalogData.edition = document.getElementById("edition-input").value;
     catalogData.phones = document.getElementById("phones-input").value.split(",").map(s => s.trim()).filter(Boolean);
 
-    const jsonStr = JSON.stringify(catalogData, null, 2);
-    const blob = new Blob([jsonStr], { type: "application/json" });
-    const url = URL.createObjectURL(blob);
-    
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "catalog.json";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-    
-    alert("Downloaded catalog.json! Please upload it to your GitHub repository in the 'pricelist/data' folder to apply changes.");
+    try {
+      const btn = document.getElementById("btn-save");
+      btn.textContent = "Saving...";
+      btn.disabled = true;
+      
+      await window.saveDatabaseCatalog(catalogData);
+      
+      btn.textContent = "Saved!";
+      setTimeout(() => {
+        btn.textContent = "Save Prices to Database";
+        btn.disabled = false;
+      }, 2000);
+      alert("Prices successfully updated for all customers!");
+    } catch (err) {
+      alert("Failed to save. Did you add your real Firebase config keys?");
+      document.getElementById("btn-save").textContent = "Save Prices to Database";
+      document.getElementById("btn-save").disabled = false;
+    }
   });
 });

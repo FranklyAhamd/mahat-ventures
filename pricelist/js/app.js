@@ -23,9 +23,13 @@
   }
 
   async function loadCatalog() {
-    const res = await fetch("data/catalog.json");
-    if (!res.ok) throw new Error("Could not load catalog");
-    catalog = await res.json();
+    if (window.loadDatabaseCatalog) {
+      catalog = await window.loadDatabaseCatalog();
+    } else {
+      const res = await fetch("data/catalog.json");
+      if (!res.ok) throw new Error("Could not load catalog");
+      catalog = await res.json();
+    }
   }
 
   function countItems(categories) {
