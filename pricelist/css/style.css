@@ -30,6 +30,11 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Prevent double-tap zoom on all interactive elements */
+button, input, select, textarea, a, .prompt-btn, .btn-add-cart, .cart-qty-btn, .chip-link {
+  touch-action: manipulation;
+}
+
 html {
   scroll-padding-top: 130px;
 }

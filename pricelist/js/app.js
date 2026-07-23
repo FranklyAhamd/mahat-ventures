@@ -229,9 +229,6 @@
             cart.push({ title, price, qty });
           }
           updateCartUI();
-          
-          // Open the cart automatically so the user knows it worked!
-          $("#cart-overlay").hidden = false;
         };
       }
     });
@@ -266,15 +263,24 @@
 
     $("#checkout-btn").addEventListener("click", () => {
       if (cart.length === 0) return;
-      let text = "Hello! I would like to place an order:\\n\\n";
+
+      // Build a nicely formatted WhatsApp message
+      let text = `*🛒 NEW ORDER*\n`;
+      text += `━━━━━━━━━━━━━━━━\n\n`;
       let total = 0;
-      cart.forEach(item => {
-        text += `- ${item.qty}x ${item.title} (₦${(item.price * item.qty).toLocaleString()})\\n`;
-        total += item.price * item.qty;
+      cart.forEach((item, i) => {
+        const itemTotal = item.price * item.qty;
+        total += itemTotal;
+        text += `${i + 1}. *${item.title}*\n`;
+        text += `   ${item.qty} x ₦${item.price.toLocaleString()} = *₦${itemTotal.toLocaleString()}*\n\n`;
       });
-      text += `\\n*Total: ₦${total.toLocaleString()}*`;
-      
-      const phone = catalog.phones && catalog.phones[0] ? catalog.phones[0].replace(/\\D/g, "") : "";
+      text += `━━━━━━━━━━━━━━━━\n`;
+      text += `*💰 TOTAL: ₦${total.toLocaleString()}*\n\n`;
+      text += `Sent from ${catalog.brand || 'MAHAT'} Price List`;
+
+      // Convert Nigerian number: 08051550404 → 2348051550404
+      const rawPhone = catalog.phones && catalog.phones[0] ? catalog.phones[0] : "";
+      const phone = rawPhone.replace(/\D/g, "").replace(/^0/, "234");
       if (!phone) {
         alert("Phone number not found in catalog!");
         return;
