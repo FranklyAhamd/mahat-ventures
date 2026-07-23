@@ -43,7 +43,6 @@
     const orderMsg = `Hello ${catalog.brand}, I would like to make an enquiry/order from your ${catalog.edition}.`;
     const waUrl = whatsappLink(catalog.phones[0], orderMsg);
     $("#whatsapp-btn").href = waUrl;
-    $("#floating-whatsapp").href = waUrl;
 
     // Contact Pills in Hero
     const pillsHtml = catalog.phones
