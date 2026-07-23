@@ -10,32 +10,47 @@ const firebaseConfig = {
   measurementId: "G-J698WTK3MS"
 };
 
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+// Initialize Firebase (guard against double-init)
+if (!firebase.apps.length) {
+  firebase.initializeApp(firebaseConfig);
+}
 const db = firebase.database();
 
 /**
+ * Resolves the correct path to catalog.json regardless of which page we're on.
+ * Works on: local dev, GitHub Pages (/mahat-ventures/), Vercel (/)
+ */
+function getCatalogFallbackUrl() {
+  const path = window.location.pathname;
+  // If we're inside /pricelist/ we go up one level: ../data/catalog.json
+  if (path.includes("/pricelist/")) {
+    return "../data/catalog.json";
+  }
+  // If we're at root admin.html, data lives in pricelist/data/
+  return "pricelist/data/catalog.json";
+}
+
+/**
  * Loads the catalog from Firebase.
- * If Firebase is empty (or fails due to invalid config), it falls back to the local catalog.json.
+ * Falls back to the local catalog.json if Firebase is empty or fails.
  */
 window.loadDatabaseCatalog = async function() {
   try {
     const snapshot = await db.ref('/catalog').once('value');
     const data = snapshot.val();
     if (data) {
+      console.log("✅ Loaded catalog from Firebase.");
       return data;
     }
+    console.log("Firebase is empty, falling back to local JSON.");
   } catch (err) {
-    console.warn("Firebase load failed (likely using placeholder config). Falling back to local JSON.");
+    console.warn("Firebase load failed, falling back to local JSON.", err.message);
   }
-  
-  // Fallback to local file depending on current page location
-  const fallbackPath = window.location.pathname.includes('/admin.html') 
-    ? "pricelist/data/catalog.json" 
-    : "data/catalog.json";
-    
-  const res = await fetch(fallbackPath);
-  if (!res.ok) throw new Error("Could not load fallback catalog");
+
+  const fallbackUrl = getCatalogFallbackUrl();
+  console.log("Fetching fallback:", fallbackUrl);
+  const res = await fetch(fallbackUrl);
+  if (!res.ok) throw new Error(`Could not load fallback catalog from ${fallbackUrl} (${res.status})`);
   return await res.json();
 };
 
@@ -43,11 +58,6 @@ window.loadDatabaseCatalog = async function() {
  * Saves the catalog to Firebase.
  */
 window.saveDatabaseCatalog = async function(catalogData) {
-  try {
-    await db.ref('/catalog').set(catalogData);
-    return true;
-  } catch (err) {
-    console.error("Failed to save to Firebase. Did you add your real config?", err);
-    throw err;
-  }
+  await db.ref('/catalog').set(catalogData);
+  return true;
 };

@@ -7,14 +7,44 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="pricelist/css/style.css">
   <style>
-    body { background: #f1f5f9; padding-bottom: 2rem; }
+    body { background: #f1f5f9; padding-bottom: 6rem; }
+
     .admin-header {
-      background: var(--navy);
+      background: linear-gradient(135deg, var(--navy) 0%, #1a3a5c 100%);
       color: #fff;
-      padding: 1.5rem;
+      padding: 1.5rem 2rem;
       margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
     }
-    .admin-header h1 { font-family: var(--font-display); }
+    .admin-header h1 { font-family: var(--font-display); font-size: 1.5rem; margin: 0; }
+    .admin-header p { margin: 0.25rem 0 0; opacity: 0.75; font-size: 0.85rem; }
+
+    .header-tools { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+
+    .btn-tool {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.55rem 1rem;
+      border-radius: var(--radius-pill);
+      border: none;
+      font-weight: 600;
+      font-size: 0.82rem;
+      cursor: pointer;
+      font-family: var(--font-body);
+      transition: opacity 0.15s, transform 0.15s;
+    }
+    .btn-tool:active { transform: scale(0.97); }
+    .btn-backup { background: #fbbf24; color: #1e3a5f; }
+    .btn-backup:hover { opacity: 0.9; }
+    .btn-pdf { background: rgba(255,255,255,0.15); color: #fff; border: 1px solid rgba(255,255,255,0.3); }
+    .btn-pdf:hover { background: rgba(255,255,255,0.25); }
+    .btn-pdf input[type=file] { display:none; }
+
     .admin-card {
       background: #fff;
       border-radius: var(--radius);
@@ -22,27 +52,183 @@
       box-shadow: var(--shadow-sm);
       margin-bottom: 2rem;
     }
-    .admin-card h2 { margin-bottom: 1rem; color: var(--navy); }
+    .admin-card h2 { margin-bottom: 1.25rem; color: var(--navy); font-family: var(--font-display); }
+
     .form-group { margin-bottom: 1rem; }
-    .form-group label { display: block; font-weight: 600; margin-bottom: 0.5rem; }
-    .form-group input { width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); }
-    .category-block { margin-bottom: 2.5rem; border: 1px solid var(--border); border-radius: var(--radius-sm); overflow: hidden; }
-    .category-header { background: var(--row-alt); padding: 1rem; font-weight: 700; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
-    .category-items { padding: 1rem; }
-    .item-row { display: flex; gap: 1rem; margin-bottom: 0.5rem; align-items: center; }
-    .item-row input[type="text"] { flex: 2; }
-    .item-row input[type="number"] { flex: 1; }
-    .btn-remove { background: #fee2e2; color: #ef4444; border: none; padding: 0.5rem 1rem; border-radius: var(--radius-sm); cursor: pointer; }
-    .btn-add { background: var(--row-alt); color: var(--navy); border: 1px dashed var(--navy); padding: 0.5rem 1rem; border-radius: var(--radius-sm); cursor: pointer; width: 100%; margin-top: 0.5rem; }
-    .admin-actions { position: sticky; bottom: 0; background: #fff; padding: 1rem; box-shadow: 0 -4px 12px rgba(0,0,0,0.05); display: flex; justify-content: flex-end; gap: 1rem; border-top: 1px solid var(--border); }
+    .form-group label { display: block; font-weight: 600; margin-bottom: 0.5rem; font-size: 0.88rem; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.04em; }
+    .form-group input { width: 100%; padding: 0.75rem 1rem; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; transition: border-color 0.15s; }
+    .form-group input:focus { outline: none; border-color: var(--navy); }
+
+    .category-block { margin-bottom: 2rem; border: 1.5px solid var(--border); border-radius: var(--radius-sm); overflow: hidden; }
+    .category-header {
+      background: var(--navy);
+      padding: 0.85rem 1.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+    .category-header input {
+      flex: 1;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 0.4rem 0.75rem;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-display);
+    }
+    .category-header input:focus { outline: none; background: rgba(255,255,255,0.2); }
+    .btn-remove-cat {
+      background: rgba(239, 68, 68, 0.2);
+      color: #fca5a5;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      font-size: 0.8rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .category-items { padding: 1rem 1.25rem; }
+    .item-row { display: grid; grid-template-columns: 1fr 120px auto; gap: 0.5rem; margin-bottom: 0.4rem; align-items: center; }
+    .item-row input { padding: 0.55rem 0.75rem; border: 1px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.88rem; }
+    .item-row input:focus { outline: none; border-color: var(--navy); }
+    .btn-remove {
+      background: #fee2e2;
+      color: #ef4444;
+      border: none;
+      padding: 0.5rem 0.65rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      font-size: 1rem;
+      line-height: 1;
+    }
+    .btn-add {
+      background: var(--row-alt);
+      color: var(--navy);
+      border: 1px dashed var(--navy);
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      width: 100%;
+      margin-top: 0.5rem;
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+
+    .add-category-btn {
+      width: 100%;
+      padding: 0.85rem;
+      border: 2px dashed var(--navy);
+      background: transparent;
+      color: var(--navy);
+      font-weight: 700;
+      font-size: 0.9rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      font-family: var(--font-display);
+      margin-top: 1rem;
+    }
+    .add-category-btn:hover { background: var(--row-alt); }
+
+    .admin-actions {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: #fff;
+      padding: 1rem 2rem;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
+      display: flex;
+      justify-content: flex-end;
+      gap: 1rem;
+      border-top: 1px solid var(--border);
+      z-index: 500;
+    }
+
+    .btn { padding: 0.7rem 1.5rem; border-radius: var(--radius-pill); font-weight: 700; font-size: 0.9rem; cursor: pointer; font-family: var(--font-display); border: none; transition: opacity 0.15s, transform 0.15s; }
+    .btn:active { transform: scale(0.97); }
+    .btn--ghost { background: var(--row-alt); color: var(--ink); border: 1.5px solid var(--border); }
+    .btn--primary { background: var(--navy); color: #fff; }
+    .btn--primary:hover { opacity: 0.9; }
+
+    .toast {
+      position: fixed;
+      top: 1.5rem; left: 50%;
+      transform: translateX(-50%) translateY(-100px);
+      background: #1e3a5c;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius-pill);
+      font-weight: 600;
+      font-size: 0.9rem;
+      z-index: 1000;
+      transition: transform 0.35s cubic-bezier(0.16,1,0.3,1);
+      box-shadow: var(--shadow-lg);
+    }
+    .toast.show { transform: translateX(-50%) translateY(0); }
+    .toast.success { background: var(--emerald); }
+    .toast.error { background: #ef4444; }
+
+    .pdf-status {
+      background: #f0fdf4;
+      border: 1px solid #86efac;
+      border-radius: var(--radius-sm);
+      padding: 1rem;
+      font-size: 0.88rem;
+      color: #15803d;
+      display: none;
+      margin-top: 1rem;
+    }
+    .pdf-status.visible { display: block; }
+    .pdf-status.loading { background: #eff6ff; border-color: #93c5fd; color: #1d4ed8; }
+    .pdf-status.error { background: #fef2f2; border-color: #fca5a5; color: #dc2626; }
+
+    #loading-overlay {
+      position: fixed; inset: 0;
+      background: rgba(11,25,44,0.65);
+      display: flex; align-items: center; justify-content: center;
+      z-index: 900;
+      color: #fff;
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      backdrop-filter: blur(4px);
+    }
+    #loading-overlay.hidden { display: none; }
+    .spinner {
+      width: 2rem; height: 2rem;
+      border: 3px solid rgba(255,255,255,0.3);
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin-right: 1rem;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
   </style>
 </head>
 <body>
 
+  <div id="loading-overlay">
+    <div class="spinner"></div>
+    <span>Loading catalog...</span>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
   <header class="admin-header">
-    <div class="container">
-      <h1>Admin Dashboard</h1>
-      <p>Edit prices and export a new catalog.json file.</p>
+    <div>
+      <h1>⚙️ Admin Dashboard</h1>
+      <p>Edit prices, upload PDF price sheets, and back up your data.</p>
+    </div>
+    <div class="header-tools">
+      <button class="btn-tool btn-backup" id="btn-backup">
+        ⬇️ Backup Data
+      </button>
+      <label class="btn-tool btn-pdf" for="pdf-upload-input">
+        📄 Upload PDF Price Sheet
+        <input type="file" id="pdf-upload-input" accept=".pdf">
+      </label>
     </div>
   </header>
 
@@ -51,34 +237,48 @@
       <h2>General Settings</h2>
       <div class="form-group">
         <label>Brand Name</label>
-        <input type="text" id="brand-input">
+        <input type="text" id="brand-input" placeholder="e.g. MAHAT MULTI-PURPOSE VENTURE">
       </div>
       <div class="form-group">
         <label>Edition Text</label>
-        <input type="text" id="edition-input">
+        <input type="text" id="edition-input" placeholder="e.g. SCHOOL BOOK PRICE LIST 2026/2027">
       </div>
       <div class="form-group">
         <label>WhatsApp Phone Numbers (Comma separated)</label>
-        <input type="text" id="phones-input">
+        <input type="text" id="phones-input" placeholder="08051550404, 08028480469">
       </div>
     </div>
 
     <div class="admin-card">
-      <h2>Categories & Prices</h2>
+      <h2>📄 Upload PDF Price Sheet</h2>
+      <p style="color: var(--ink-soft); font-size: 0.9rem; margin-bottom: 1rem;">
+        Upload your PDF price list (like SCHOOL.pdf) and the system will try to extract categories and book titles from it automatically.
+        After parsing, review the results below and click <strong>Save Prices to Database</strong>.
+      </p>
+      <label class="btn-tool btn-pdf" for="pdf-upload-input2" style="background: var(--navy); color:#fff; display:inline-flex; padding: 0.75rem 1.5rem;">
+        📄 Choose PDF File
+        <input type="file" id="pdf-upload-input2" accept=".pdf">
+      </label>
+      <div class="pdf-status" id="pdf-status"></div>
+    </div>
+
+    <div class="admin-card">
+      <h2>Categories &amp; Prices</h2>
       <div id="editor-container"></div>
+      <button class="add-category-btn" id="btn-add-category">+ Add New Category</button>
     </div>
   </main>
 
   <div class="admin-actions">
-    <button class="btn btn--ghost" onclick="window.location.href='index.html'">Cancel</button>
-    <button class="btn btn--primary" id="btn-save">Save Prices to Database</button>
+    <button class="btn btn--ghost" onclick="window.location.href='pricelist/index.html'">← Back to Store</button>
+    <button class="btn btn--primary" id="btn-save">💾 Save Prices to Database</button>
   </div>
 
   <!-- Firebase SDKs -->
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
-  
-  <script src="pricelist/js/db.js?v=4"></script>
-  <script src="admin.js?v=4"></script>
+
+  <script src="pricelist/js/db.js?v=5"></script>
+  <script src="admin.js?v=5"></script>
 </body>
 </html>
