@@ -29,8 +29,12 @@ window.loadDatabaseCatalog = async function() {
     console.warn("Firebase load failed (likely using placeholder config). Falling back to local JSON.");
   }
   
-  // Fallback to local file
-  const res = await fetch("data/catalog.json");
+  // Fallback to local file depending on current page location
+  const fallbackPath = window.location.pathname.includes('/admin.html') 
+    ? "pricelist/data/catalog.json" 
+    : "data/catalog.json";
+    
+  const res = await fetch(fallbackPath);
   if (!res.ok) throw new Error("Could not load fallback catalog");
   return await res.json();
 };
