@@ -86,6 +86,40 @@
       </a>`
       )
       .join("");
+      
+    // Auto-scrolling logic for the category chips
+    let scrollSpeed = 0.5; // pixels per frame
+    let scrollPos = nav.scrollLeft;
+    let isPaused = false;
+    let interactionTimeout;
+    
+    const pauseScroll = () => {
+      isPaused = true;
+      clearTimeout(interactionTimeout);
+      interactionTimeout = setTimeout(() => {
+        isPaused = false;
+        scrollPos = nav.scrollLeft;
+      }, 2500);
+    };
+
+    nav.addEventListener('mouseenter', () => { isPaused = true; });
+    nav.addEventListener('mouseleave', () => { isPaused = false; scrollPos = nav.scrollLeft; });
+    nav.addEventListener('touchstart', pauseScroll, {passive: true});
+    nav.addEventListener('touchmove', pauseScroll, {passive: true});
+    nav.addEventListener('wheel', pauseScroll, {passive: true});
+
+    const scrollStep = () => {
+      if (!isPaused && nav.scrollWidth > nav.clientWidth) {
+        scrollPos += scrollSpeed;
+        if (scrollPos >= nav.scrollWidth - nav.clientWidth) {
+          scrollPos = 0; // jump to start when reaching end
+        }
+        nav.scrollLeft = scrollPos;
+      }
+      requestAnimationFrame(scrollStep);
+    };
+    
+    requestAnimationFrame(scrollStep);
   }
 
   let cart = [];
