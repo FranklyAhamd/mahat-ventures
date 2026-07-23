@@ -217,9 +217,12 @@
   <div class="toast" id="toast"></div>
 
   <header class="admin-header">
-    <div>
-      <h1>⚙️ Admin Dashboard</h1>
-      <p>Edit prices, upload PDF price sheets, and back up your data.</p>
+    <div style="display: flex; align-items: center; gap: 1.25rem;">
+      <img src="pricelist/assets/mahat_logo.png" style="width: 50px; height: 50px; border-radius: 12px; border: 2px solid rgba(255,255,255,0.25); background: #fff; object-fit: cover;" alt="MAHAT Logo">
+      <div>
+        <h1>⚙️ Admin Dashboard</h1>
+        <p>Edit book prices, import price sheets, and manage catalogs.</p>
+      </div>
     </div>
     <div class="header-tools">
       <button class="btn-tool btn-backup" id="btn-backup">
@@ -235,17 +238,11 @@
   <main class="container">
     <div class="admin-card">
       <h2>General Settings</h2>
+      <input type="hidden" id="brand-input">
+      <input type="hidden" id="phones-input">
       <div class="form-group">
-        <label>Brand Name</label>
-        <input type="text" id="brand-input" placeholder="e.g. MAHAT MULTI-PURPOSE VENTURE">
-      </div>
-      <div class="form-group">
-        <label>Edition Text</label>
+        <label>Edition Text (e.g. Current Price List Session)</label>
         <input type="text" id="edition-input" placeholder="e.g. SCHOOL BOOK PRICE LIST 2026/2027">
-      </div>
-      <div class="form-group">
-        <label>WhatsApp Phone Numbers (Comma separated)</label>
-        <input type="text" id="phones-input" placeholder="08051550404, 08028480469">
       </div>
     </div>
 
