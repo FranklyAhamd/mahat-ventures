@@ -1,14 +1,13 @@
 // pricelist/js/db.js
-// FIREBASE CONFIGURATION
-// REPLACE THESE WITH YOUR ACTUAL FIREBASE CONFIG KEYS
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  databaseURL: "https://YOUR_PROJECT_ID-default-rtdb.firebaseio.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyA_VomVhNVx4251igEdumkbf_iDK7PJoiM",
+  authDomain: "mahat-ventures.firebaseapp.com",
+  databaseURL: "https://mahat-ventures-default-rtdb.firebaseio.com",
+  projectId: "mahat-ventures",
+  storageBucket: "mahat-ventures.firebasestorage.app",
+  messagingSenderId: "188096910263",
+  appId: "1:188096910263:web:201fd952445d645866ce32",
+  measurementId: "G-J698WTK3MS"
 };
 
 // Initialize Firebase
