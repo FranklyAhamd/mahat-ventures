@@ -161,18 +161,44 @@
         const title = e.target.dataset.title;
         const price = Number(e.target.dataset.price);
         
-        let qtyStr = prompt(`How many copies of "${title}" would you like to add?`, "1");
-        if (qtyStr === null) return;
-        const qty = parseInt(qtyStr, 10);
-        if (isNaN(qty) || qty <= 0) return;
+        const overlay = $("#prompt-overlay");
+        const titleEl = $("#prompt-desc");
+        const qtyEl = $("#prompt-qty");
+        titleEl.textContent = title;
+        qtyEl.value = 1;
+        overlay.hidden = false;
 
-        const existing = cart.find(i => i.title === title);
-        if (existing) {
-          existing.qty += qty;
-        } else {
-          cart.push({ title, price, qty });
-        }
-        updateCartUI();
+        const cleanup = () => {
+          overlay.hidden = true;
+          $("#prompt-add").onclick = null;
+          $("#prompt-cancel").onclick = null;
+          $("#prompt-minus").onclick = null;
+          $("#prompt-plus").onclick = null;
+        };
+
+        $("#prompt-cancel").onclick = cleanup;
+        $("#prompt-minus").onclick = () => {
+          if (qtyEl.value > 1) qtyEl.value--;
+        };
+        $("#prompt-plus").onclick = () => {
+          qtyEl.value++;
+        };
+        $("#prompt-add").onclick = () => {
+          const qty = parseInt(qtyEl.value, 10);
+          cleanup();
+          if (isNaN(qty) || qty <= 0) return;
+
+          const existing = cart.find(i => i.title === title);
+          if (existing) {
+            existing.qty += qty;
+          } else {
+            cart.push({ title, price, qty });
+          }
+          updateCartUI();
+          
+          // Open the cart automatically so the user knows it worked!
+          $("#cart-overlay").hidden = false;
+        };
       }
     });
 

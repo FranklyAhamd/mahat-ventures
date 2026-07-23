@@ -125,6 +125,22 @@
     </div>
   </div>
 
+  <div class="prompt-overlay" id="prompt-overlay" hidden>
+    <div class="prompt-modal">
+      <h3 class="prompt-title">Add to Cart</h3>
+      <div class="prompt-desc" id="prompt-desc">Book title</div>
+      <div class="prompt-controls">
+        <button class="prompt-btn" id="prompt-minus">-</button>
+        <input type="number" class="prompt-input" id="prompt-qty" value="1" min="1">
+        <button class="prompt-btn" id="prompt-plus">+</button>
+      </div>
+      <div class="prompt-actions">
+        <button class="btn-prompt-cancel" id="prompt-cancel">Cancel</button>
+        <button class="btn-prompt-add" id="prompt-add">Confirm</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Firebase App (the core Firebase SDK) -->
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
   <!-- Firebase Realtime Database -->
