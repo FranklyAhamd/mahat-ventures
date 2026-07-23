@@ -966,3 +966,50 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
     text-align: left;
   }
 }
+
+/* ── Cart Clear All and Delete Buttons ──────────────────────────────────────── */
+.btn-clear-cart {
+  background: transparent;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  color: #ef4444;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: var(--font-body);
+}
+
+.btn-clear-cart:hover {
+  background: #fee2e2;
+  border-color: #ef4444;
+}
+
+.btn-clear-cart:active {
+  transform: scale(0.95);
+}
+
+.cart-delete-btn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  padding: 0.4rem;
+  font-size: 1.1rem;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+
+.cart-delete-btn:hover {
+  color: #ef4444;
+  background: #fee2e2;
+}
+
+.cart-delete-btn:active {
+  transform: scale(0.9);
+}
+

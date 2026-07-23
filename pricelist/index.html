@@ -107,7 +107,10 @@
     <div class="cart-modal">
       <div class="cart-header">
         <h2>Your Cart</h2>
-        <button class="cart-close" id="cart-close">&times;</button>
+        <div style="display:flex;align-items:center;gap:0.5rem">
+          <button class="btn-clear-cart" id="cart-clear">Clear All</button>
+          <button class="cart-close" id="cart-close">&times;</button>
+        </div>
       </div>
       <div class="cart-body" id="cart-items-container">
         <!-- Cart items grouped by category rendered here -->
@@ -146,8 +149,8 @@
   <!-- Firebase Realtime Database -->
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
   
-  <script src="js/db.js?v=6"></script>
-  <script src="js/app.js?v=6"></script>
+  <script src="js/db.js?v=7"></script>
+  <script src="js/app.js?v=7"></script>
 </body>
 </html>
 

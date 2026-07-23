@@ -122,7 +122,16 @@
     requestAnimationFrame(scrollStep);
   }
 
+  // Load cart from localStorage
   let cart = [];
+  try {
+    const saved = localStorage.getItem('mahat_cart');
+    if (saved) cart = JSON.parse(saved);
+  } catch(e) {}
+
+  function saveCart() {
+    try { localStorage.setItem('mahat_cart', JSON.stringify(cart)); } catch(e) {}
+  }
 
   function renderSections(categories) {
     const container = $("#catalog-sections");
@@ -156,13 +165,14 @@
   }
 
   function updateCartUI() {
+    saveCart();
     const totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
     $("#cart-badge").textContent = totalQty;
     $("#floating-cart").style.display = totalQty > 0 ? "flex" : "none";
     
     const container = $("#cart-items-container");
     if (cart.length === 0) {
-      container.innerHTML = `<div class="cart-empty">Your cart is empty</div>`;
+      container.innerHTML = `<div class="cart-empty">🛒 Your cart is empty</div>`;
       $("#cart-grand-total").textContent = "₦0";
       return;
     }
@@ -178,9 +188,10 @@
             <div class="cart-item-price">₦${item.price.toLocaleString()} x ${item.qty} = ₦${itemTotal.toLocaleString()}</div>
           </div>
           <div class="cart-item-actions">
-            <button class="cart-qty-btn" data-index="${index}" data-delta="-1">-</button>
+            <button class="cart-qty-btn" data-index="${index}" data-delta="-1">−</button>
             <span class="cart-qty">${item.qty}</span>
             <button class="cart-qty-btn" data-index="${index}" data-delta="1">+</button>
+            <button class="cart-delete-btn" data-index="${index}" title="Remove item">🗑</button>
           </div>
         </div>
       `;
@@ -245,6 +256,18 @@
           updateCartUI();
         }
       }
+      if (e.target.classList.contains("cart-delete-btn")) {
+        const index = parseInt(e.target.dataset.index, 10);
+        cart.splice(index, 1);
+        updateCartUI();
+      }
+    });
+
+    $("#cart-clear").addEventListener("click", () => {
+      if (cart.length === 0) return;
+      if (!confirm("Remove all items from your cart?")) return;
+      cart.length = 0;
+      updateCartUI();
     });
 
     $("#floating-cart").addEventListener("click", () => {
